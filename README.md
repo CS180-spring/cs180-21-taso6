@@ -2,11 +2,11 @@
 # MangoDB-CS180
 
 Team members: 
-##### Billy Chau (bchau010@ucr.edu)
-##### Francisco Quiroz-Vivar (fquir007@ucr.edu)
-##### Caryn Iwanaga (ciwan001@ucr.edu)
-##### Eddy Tat (etat002@ucr.edu)
-##### Anjali Daryani (adary001@ucr.edu)
+* Billy Chau (bchau010@ucr.edu)
+* Francisco Quiroz-Vivar (fquir007@ucr.edu)
+* Caryn Iwanaga (ciwan001@ucr.edu)
+* Eddy Tat (etat002@ucr.edu)
+* Anjali Daryani (adary001@ucr.edu)
 
 Choice of interface: **Terminal Console**
 
