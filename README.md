@@ -10,6 +10,13 @@ Team members:
 
 Choice of interface: **Terminal Console**
 
+## Interface Documentation
+* account_create - initiates account creation process
+* show_records {flag} - shows 50 records of birds at a time
+* next_page - shows the next page of records
+* prev_page - shows the previous page of records
+* 
+
 Programming language(s): **C++**
 
 High-level description:
