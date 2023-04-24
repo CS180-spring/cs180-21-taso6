@@ -1,15 +1,8 @@
 #include <iostream>
+
+#include "accountSystem.cpp"
+
 using namespace std;
-
-void login() {
-
-}
-void registration() {
-
-}
-void forgot() {
-  
-}
 
 int main() {
   int input;
