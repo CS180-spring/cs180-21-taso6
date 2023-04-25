@@ -11,17 +11,19 @@ void login() {
 void registration() {
     string username;
     string password;
-    string id;
-    string pass;
+
+    fstream record("records.csv");
 
     cout << "Enter a Username" << endl;
     cout << endl;
     cin >> username;
+    cout << endl;
     cout << "Enter a Password" << endl;
     cin >> password;
 
-    ofstream f1("records.txt", ios::app);
-    f1 << id << ' '<< pass << endl;
+    record << username << ", " << password;
+
+
     system("cls");
     cout << "Your account has been created!" << endl;
     main();
