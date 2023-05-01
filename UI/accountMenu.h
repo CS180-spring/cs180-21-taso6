@@ -1,0 +1,48 @@
+#ifndef ACCOUNTMENU_H
+#define ACCOUNTMENU_H
+#include <iostream>
+#include "../backend/Initialize.h"
+#include "accountSystem.cpp"
+
+using namespace std;
+
+void userView(){
+    Database curData;
+    
+    int input;
+    while(input != 4){
+      cout << "_______________________________________________________________" << endl;
+      cout << "_____________________Account Creation Test_____________________" << endl;
+      cout << "______________________________Menu_____________________________" << endl;
+      cout << "_______________________________________________________________" << endl;
+      cout << "" << endl;
+      cout << "| 1. Login                    |" << endl;
+      cout << "| 2. Register                 |" << endl;
+      cout << "| 3. Forgot Password          |" << endl;
+      cout << "| 4. Exit                     |" << endl;
+      cout << "" << endl;
+      cin >> input;
+      cout << endl;
+
+      switch(input) {
+        case 1:
+          login(curData);
+          break;
+        case 2:
+          registration(curData);
+          break;
+        case 3:
+          forgot();
+          break;
+        case 4:
+          cout << "Theres no exit function yet lol" << endl;
+          break;
+        default:
+          system("cls");
+          cout << "Not a valid response, please try again." << endl;
+
+      }
+    }
+}
+
+#endif
