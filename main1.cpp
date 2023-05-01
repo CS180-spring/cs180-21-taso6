@@ -28,63 +28,53 @@ int main() {
     string userID;
 
     string in;
-    BirdRecord baseDat;
+    
+    string username = "baseline";
+    vector<BirdRecord> baselineCollection;
 
     // read in the column names
     getline(file,in);
 
+    BirdRecord baseDat;
 
-    // for(int i = 0;i < 9; i++){
+    for(int i = 0;i < 1000; i++){
         getline(file, serialNum, ',');
-        cout << serialNum << endl;
+        baseDat.SetSerialNum(serialNum);
 
         getline(file, XCord, ',');
-        cout << XCord << endl;
+        baseDat.SetXCord(XCord);
         
         getline(file, YCord, ',');
-        cout << YCord << endl;
+        baseDat.SetYCord(YCord);
 
         getline(file, commonName, ',');
-        cout << commonName << endl;
+        baseDat.SetCommonName(commonName);
 
         getline(file, scientificName, ',');
-        cout << scientificName << endl;
+        baseDat.SetScientificName(scientificName);
 
         getline(file, State, ',');
-        cout << State << endl;
+        baseDat.SetState(State);
         
         getline(file, County, ',');
-        cout << County << endl;
+        baseDat.SetCounty(County);
 
         getline(file, Locality, ',');
-        cout << Locality << endl;
+        baseDat.SetLocality(Locality);
 
         getline(file, obsDate, ',');
-        cout << obsDate << endl;
+        baseDat.SetObsDate(obsDate);
 
         getline(file, userID);
-        cout << userID << endl;
+        baseDat.SetUserID(userID);
         
-        // getline(file, in, ',');
-        // cout << in << endl;
-        // cout << endl;
-    // }
+        baselineCollection.push_back(baseDat);
+    }
 
-    // vector<vector<string>> content;
-	// vector<string> row;
+    // Collection col1;
+    // col1.setCol(baselineCollection);
 
-    // while(getline(file, line))
-	// 	{
-	// 		row.clear();
- 
-	// 		stringstream str(line);
- 
-	// 		while(getline(str, word, ','))
-	// 			row.push_back(word);
-	// 		content.push_back(row);
-	// 	}
-
-    // 9 attributes
+    file.close();
 
 
     return 0;

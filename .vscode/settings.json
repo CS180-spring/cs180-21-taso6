@@ -4,6 +4,8 @@
         "istream": "cpp",
         "ostream": "cpp",
         "string": "cpp",
-        "filesystem": "cpp"
+        "filesystem": "cpp",
+        "vector": "cpp",
+        "fstream": "cpp"
     }
 }
