@@ -9,8 +9,8 @@
 }*/
 
 void Database::readFile(string file){
-    std::vector<string> usernames = parseAllCSV("assets/records.csv", "Username");
-    std::vector<string> passwords = parseAllCSV("assets/records.csv", "Password");
+    std::vector<string> usernames = parseAllCSV(file, "Username");
+    std::vector<string> passwords = parseAllCSV(file, "Password");
     for(int i=0; i<usernames.size(); i++){
         left->moreMap(usernames.at(i), passwords.at(i));
     }
