@@ -2,13 +2,14 @@
 #define ACCOUNTMENU_H
 #include <iostream>
 #include "../backend/Initialize.h"
-#include "accountSystem.cpp"
+#include "accountSystem.h"
 
 using namespace std;
 
 void userView(){
     Database curData;
-    
+    curData.readFile("assets/records.csv");
+
     int input;
     while(input != 4){
       cout << "_______________________________________________________________" << endl;

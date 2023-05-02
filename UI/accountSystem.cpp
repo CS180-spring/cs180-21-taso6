@@ -1,8 +1,7 @@
 #include <iostream>
 #include <fstream>
-#include <string.h>
 #include "accountSystem.h"
-#include "accountMenu.h"
+
 using namespace std;
 
 void login(Database curData) {
@@ -27,9 +26,8 @@ void login(Database curData) {
     else{
         cout << "cool" << endl;
     }
-
-
 }
+
 void registration(Database curData) {
     string username;
     string password;
@@ -40,6 +38,10 @@ void registration(Database curData) {
     cout << "Enter a Username" << endl;
     cout << endl;
     cin >> username;
+    while(curData.left->lookUp(username) != ""){
+        cout << "Username is taken, please choose another" << endl;
+        cin >> username;
+    }
     cout << endl;
     cout << "Enter a Password" << endl;
     cin >> password;
@@ -49,7 +51,7 @@ void registration(Database curData) {
 
     curData.left->moreMap(username, password);
 
-    system("clear");
+//    system("clear");
     cout << "Your account has been created!" << endl;
 }
 void forgot() {
