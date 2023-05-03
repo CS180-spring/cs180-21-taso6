@@ -85,8 +85,8 @@ vector<string> parseAllCSV(string fileName, string lookfor) {
         // cout << endl;
 
         int start = attributePos(line, lookfor, attributes);
-        unsigned int end = line.find(',', attributePos(line, "y", attributes)) - attributePos(line, "y", attributes);
-//        cout << line.substr(start, end+1);
+        unsigned int end = line.find(',', attributePos(line, lookfor, attributes)) - attributePos(line, lookfor, attributes);
+//        cout << line.substr(start, end);
         list.push_back(line.substr(start, end));
     }
     file.close();
