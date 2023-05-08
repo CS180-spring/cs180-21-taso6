@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F8F8F8;
+    }
+    .container {
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #FFFFFF;
+      text-align: center;
+      box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+    }
+    .container h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #FF7F50;
+    }
+    .container p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #777777;
+    }
+    .form-container {
+      text-align: center;
+    }
+    .form-container input[type=text],
+    .form-container input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    .form-container button {
+      background-color: #FF7F50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .form-container button:hover {
+      opacity: 0.8;
+    }
+    .container .register {
+      text-align: center;
+      color: #777777;
+    }
+    .container .register a {
+      color: #FF7F50;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>BirbyDB</h1>
+    <p>For all of your birby needs.</p>
+    
+    <!-- Place the logo image code below this line -->
+    <img id="birbydb-logo.png" alt="BirbyDB Logo" style="position: absolute; top: -20px; right: -10px;">
+    <!-- Adjust the "src" attribute with the actual path to your logo image -->
+    
+  </div>
+  <div class="form-container">
+    <div class="container">
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Login</button>
+      </form>
+      <div class="register">
+        <p>Don't have an account? <a href="#">Register</a></p>
+        <p><a href="#">Forgot password?</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
