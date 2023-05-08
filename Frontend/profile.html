@@ -1,12 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" conent="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-</head>
-<body>
-    Welcom to my website<br>
-</body>>
-</html>>
+    <head>
+        <link rel="stylesheet" type="text/css" href="listPage.css">
+        <script src="listPage.js"></script>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f2f2f2;
+            }
+            h1 {
+                text-align: center;
+                color: #333;
+            }
+            .container {
+                width: 80%;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 5px;
+                box-shadow: 0 0 10px #ccc;
+            }
+            .profile-img {
+                display: block;
+                margin: 0 auto;
+                max-width: 200px;
+                border-radius: 50%;
+                border: 5px solid #fff;
+                box-shadow: 0 0 10px #ccc;
+            }
+            p {
+                text-align: center;
+                color: #555;
+                margin-top: 20px;
+                line-height: 1.5;
+            }
+            label {
+                display: block;
+                font-weight: bold;
+                margin-top: 20px;
+                color: #333;
+            }
+            input[type=text], input[type=email], input[type=password] {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                margin-top: 5px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                font-size: 16px;
+            }
+            button {
+                background-color: #4CAF50;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #3e8e41;
+            }
+            ul {
+                list-style: none;
+            }
+            li {
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav id = "header" role = "navigation">
+            <a href = "#loginpage" class = "skip">prev page</a>
+            <div id = "logo">
+                <img id = "logo" src = "images/purple_bird.png" alt = "image of the weird purple bird; Birby logo"> 
+            </div>
+            <div id = "logoText">
+                BirbyDB
+            </div>
+        </nav>
+        <main role="main">
+            <div class="container">
+                <img class="profile-img" src="images/stockpicture.png">
+                <h1>Account Profile</h1>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" value="Bobby Smith">
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="Bobbysmith74@gmail.com">
+                    <h2>Database</h2>
+                    <a href="listPage.html"><button>Bird Database</button></a></li>
+                    
+                    <h3>My Lists</h3>
+                    <ul>
+                        <li><a href="listPage.html"><button>My List</button></a></li>
+                        <li><a href="page1.html"><button>Wishlist</button></a></li>
+                        <li><a href="page1.html"><button>Derrick's List</button></a></li>
+                    </ul> 
+                    <button onclick="addItem()">Add List</button>
+                        <script>
+                        function addItem() {
+                            var newItem = document.createElement("li");
+                            var textnode = document.createTextNode("New Item");
+                            newItem.appendChild(textnode);
+                            document.getElementById("myList").appendChild(newItem);
+                        }
+                        </script>                     
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
