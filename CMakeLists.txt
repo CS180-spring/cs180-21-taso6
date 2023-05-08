@@ -17,4 +17,4 @@ add_executable(cs180_21_taso6
         UI/accountMenu.h
         UI/accountSystem.cpp
         UI/accountSystem.h
-        main.cpp)
+        main.cpp backend/bird_record.h backend/bird_record.cpp)

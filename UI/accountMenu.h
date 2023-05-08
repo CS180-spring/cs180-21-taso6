@@ -10,7 +10,7 @@ void userView(){
     Database curData;
     curData.readFile("assets/records.csv");
 
-    int input;
+    int input=0;
     while(input != 4){
       cout << "_______________________________________________________________" << endl;
       cout << "_____________________Account Creation Test_____________________" << endl;
@@ -20,7 +20,7 @@ void userView(){
       cout << "| 1. Login                    |" << endl;
       cout << "| 2. Register                 |" << endl;
       cout << "| 3. Forgot Password          |" << endl;
-      cout << "| 4. Exit                     |" << endl;
+      cout << "| 4. Show records             |" << endl;
       cout << "" << endl;
       cin >> input;
       cout << endl;
@@ -36,7 +36,8 @@ void userView(){
           forgot();
           break;
         case 4:
-          cout << "Theres no exit function yet lol" << endl;
+//          cout << "Theres no exit function yet lol" << endl;
+            cout << "X | Y | COMMON NAME | SCIENTIFIC NAME | STATE | COUNTY | LOCALITY | OBSERVATION DATE" << endl;
           break;
         default:
           system("cls");

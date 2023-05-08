@@ -6,20 +6,13 @@
 #include <string>
 
 class Database{
+private:
+    vector<Collection> collections;
+    vector<User> users;
 public:
-    string dbName;
-    Collection *left = new Collection;
-    User *right;
-    string get_dbName(){
-        return dbName;
-    }
-
-    void set_name(string name){
-        dbName = name;
-        return;
-    }
 
     void readFile(string file);
+    void createCollection(string fileName, string name, string username);
 };
 
 #endif

@@ -20,12 +20,12 @@ void login(Database curData) {
     cout << "Enter a Password" << endl;
     cin >> password;
 
-    if(password != curData.left->lookUp(username)){
+//    if(password != curData.left->lookUp(username)){
         cout << "too bad" << endl;
-    }
-    else{
+//    }
+//    else{
         cout << "cool" << endl;
-    }
+//    }
 }
 
 void registration(Database curData) {
@@ -38,10 +38,10 @@ void registration(Database curData) {
     cout << "Enter a Username" << endl;
     cout << endl;
     cin >> username;
-    while(curData.left->lookUp(username) != ""){
+//    while(curData.left->lookUp(username) != ""){
         cout << "Username is taken, please choose another" << endl;
         cin >> username;
-    }
+//    }
     cout << endl;
     cout << "Enter a Password" << endl;
     cin >> password;
@@ -49,7 +49,7 @@ void registration(Database curData) {
     test << endl << username << "," << password << ",0";
     test.close();
 
-    curData.left->moreMap(username, password);
+//    curData.left->moreMap(username, password);
 
 //    system("clear");
     cout << "Your account has been created!" << endl;

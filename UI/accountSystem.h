@@ -1,5 +1,5 @@
-#ifndef ACCOUNTSYSTEM_H INCLUDED
-#define ACCOUNTSYSTEM_H INCLUDED
+#ifndef ACCOUNTSYSTEM_H
+#define ACCOUNTSYSTEM_H
 #include "Initialize.h"
 
 void login(Database curData);

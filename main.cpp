@@ -2,6 +2,7 @@
 //#include "backend/Initialize.h"
 //#include "UI/accountSystem.h"
 #include "UI/accountMenu.h"
+#include "backend/collection.h"
 
 using namespace std;
 
@@ -26,6 +27,9 @@ Database initialize_DB(){
 }*/
 
 int main() {
-  userView();
-  return 0;
+    Collection coll("assets/eBird_1k.csv", "e_Bird", "admin");
+    userView();
+    coll.load();
+    coll.show();
+    return 0;
 };

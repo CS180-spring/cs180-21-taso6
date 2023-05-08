@@ -3,7 +3,7 @@
 #include<iostream>
 #include<vector>
 #include<string>
-#include "collection.h"
+//#include "collection.h"
 
 using namespace std;
 
@@ -20,9 +20,9 @@ class User{
     void userLogin(string name, string password);
     void createList(string name);
     vector<string> lastSightings();
-    //void editData(Collection collection, bird_Record record);
-    void viewLists();
-    void getList(string name);
+//    void editData(Collection collection, bird_Record record);
+//    void viewLists();
+//    void getList(string name);
 
 
 };

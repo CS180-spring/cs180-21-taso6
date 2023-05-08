@@ -92,3 +92,63 @@ vector<string> parseAllCSV(string fileName, string lookfor) {
     file.close();
     return list;
 }
+
+vector<string> parseCSVforDB(string fileName) {
+    fstream file;
+    file.open(fileName);
+    if (file.fail()) {
+        cout << "failed\n";
+        exit(-1);
+    }
+    vector<string> list;
+    string attributes;
+    getline(file, attributes, '\n');
+    string line;
+    while (getline(file, line, '\n')){
+        string temp = "";
+        string lookfor;
+        lookfor = "x";
+        int start = attributePos(line, lookfor, attributes);
+        unsigned int end = line.find(',', attributePos(line, lookfor, attributes)) - attributePos(line, lookfor, attributes);
+        temp += (line.substr(start, end)) + ',';
+
+        lookfor = "y";
+        start = attributePos(line, lookfor, attributes);
+        end = line.find(',', attributePos(line, lookfor, attributes)) - attributePos(line, lookfor, attributes);
+        temp += (line.substr(start, end)) + ',';
+
+        lookfor = "COMMON NAME";
+        start = attributePos(line, lookfor, attributes);
+        end = line.find(',', attributePos(line, lookfor, attributes)) - attributePos(line, lookfor, attributes);
+        temp += (line.substr(start, end)) + ',';
+
+        lookfor = "SCIENTIFIC NAME";
+        start = attributePos(line, lookfor, attributes);
+        end = line.find(',', attributePos(line, lookfor, attributes)) - attributePos(line, lookfor, attributes);
+        temp += (line.substr(start, end)) + ',';
+
+        lookfor = "STATE";
+        start = attributePos(line, lookfor, attributes);
+        end = line.find(',', attributePos(line, lookfor, attributes)) - attributePos(line, lookfor, attributes);
+        temp += (line.substr(start, end)) + ',';
+
+        lookfor = "COUNTY";
+        start = attributePos(line, lookfor, attributes);
+        end = line.find(',', attributePos(line, lookfor, attributes)) - attributePos(line, lookfor, attributes);
+        temp += (line.substr(start, end)) + ',';
+
+        lookfor = "LOCALITY";
+        start = attributePos(line, lookfor, attributes);
+        end = line.find(',', attributePos(line, lookfor, attributes)) - attributePos(line, lookfor, attributes);
+        temp += (line.substr(start, end)) + ',';
+
+        lookfor = "OBSERVATION DATE";
+        start = attributePos(line, lookfor, attributes);
+        end = line.find(',', attributePos(line, lookfor, attributes)) - attributePos(line, lookfor, attributes);
+        temp += (line.substr(start, end)) + ' ';
+
+        list.push_back(temp);
+    }
+    file.close();
+    return list;
+}
