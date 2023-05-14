@@ -79,9 +79,57 @@
                 position: absolute;
                 margin-left: 3%;
             }
+            .tab {
+                display: none; /* Hide all tabs by default */
+            }
         </style>
+        <script>
+            function addTab() {
+                // Get the input value for the new tab name
+                var newTabName = document.getElementById("newTabName").value;
+
+                // Create a new tab button
+                var newButton = document.createElement("button");
+                newButton.textContent = newTabName;
+
+                // Add the click event listener to open the new tab
+                newButton.onclick = function() {
+                    openTab(newTabName);
+                };
+
+                // Add the new button to the tabs container
+                var tabsContainer = document.getElementById("tabsContainer");
+                tabsContainer.appendChild(newButton);
+
+                // Create a new tab content section
+                var newTabContent = document.createElement("div");
+                newTabContent.id = newTabName;
+                newTabContent.className = "tab";
+                newTabContent.innerHTML = "<h2>Content for " + newTabName + "</h2>" +
+                                            "<p>This is the content for " + newTabName + ".</p>";
+
+                // Append the new tab content section
+                document.body.appendChild(newTabContent);
+
+                // Clear the input field
+                document.getElementById("newTabName").value = "";
+
+                //WORK IN PROGRESS, currently doesnt work in a container.
+            }
+            function openTab(tabName) {
+                // Hide all tabs
+                var tabs = document.getElementsByClassName("tab");
+                for (var i = 0; i < tabs.length; i++) {
+                    tabs[i].style.display = "none";
+                }
+
+                // Show the selected tab
+                var tabContent = document.getElementById(tabName);
+                tabContent.style.display = "block";
+            }
+        </script>  
     </head>
-    <body>
+    <topbody>
         <nav id = "header" role = "navigation">
             <div id = "logo">
                 <img id = "logo" src = "images/purple_bird.png" alt = "image of the weird purple bird; Birby logo"> 
@@ -89,8 +137,13 @@
             <div id = "logoText">
                 BirbyDB
             </div>
+            <div class="tab-bar">
+                <a href="home.html"><button>Logout</button></a></li>
+                <a href="home.html"><button>Home</button></a></li>
+                <a href="listPage.html"><button>Bird Database</button></a></li>
+              </div>
         </nav>
-        <main role="main">
+        <body>
             <div class="container">
                 <img class="profile-img" src="images/stockpicture.png">
                 <h1>Account Profile</h1>
@@ -99,28 +152,46 @@
                     <input type="text" id="name" name="name" value="Bobby Smith">
         
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" value="Bobbysmith74@gmail.com">
-                    <!-- <h2>Database</h2>
-                    <a href="listPage.html"><button>Bird Database</button></a></li> -->
-
-                    
-                    <h3>My Lists</h3>
-                    <ul>
-                        <li><a href="listPage.html"><button>My List</button></a></li>
-                        <li><a href="page1.html"><button>Wishlist</button></a></li>
-                        <li><a href="page1.html"><button>Derrick's List</button></a></li>
-                    </ul> 
-                    <button onclick="addItem()">Add List</button>
-                        <script>
-                        function addItem() {
-                            var newItem = document.createElement("li");
-                            var textnode = document.createTextNode("New Item");
-                            newItem.appendChild(textnode);
-                            document.getElementById("myList").appendChild(newItem);
-                        }
-                        </script>                     
+                    <input type="email" id="email" name="email" value="Bobbysmith74@gmail.com">                    
                 </form>
+                <h1>My Lists</h1>
+                <ul>
+                    <div class="tab-bar">
+                        <button onclick="openTab('tab1')">My List</button>
+                        <button onclick="openTab('tab2')">Wish List</button>
+                        <button onclick="openTab('tab3')">Derrick's List</button>
+                        </div>
+                    
+                        <div id="tab1" class="tab">
+                        <h2>My List</h2>
+                        <ul>
+                            <li>Blue Bird</li>
+                            <li>Mocking Bird</li>
+                            <li>Something Bird</li>
+                          </ul>
+                        </div>
+                    
+                        <div id="tab2" class="tab">
+                        <h2>Wish List</h2>
+                        <ul>
+                            <li>Random Bird</li>
+                            <li>Bird 1</li>
+                            <li>Bird2</li>
+                            </ul>
+                        </div>
+                    
+                        <div id="tab3" class="tab">
+                        <h2>Derrick's List</h2>
+                        <ul>
+                            <li>Bird A</li>
+                            <li>Bird B</li>
+                            <li>BirdBy</li>
+                            </ul>
+                        </div>
+                        <input type="text" id="newTabName" placeholder="Enter a new tab name">
+                        <button onclick="addTab()">Add Tab</button>
+                </ul>
             </div>
-        </main>
-    </body>
+        </body>
+    </topbody>
 </html>
