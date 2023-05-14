@@ -15,9 +15,13 @@ button:hover {
 }
 .profile {
     position: absolute;
-    margin-left: 11%;
+    margin-left: 19.3%;
 }
 .database {
+    position: absolute;
+    margin-left: 10.1%;
+}
+.home {
     position: absolute;
     margin-left: 3%;
 }
