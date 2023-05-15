@@ -4,6 +4,9 @@
         <link rel="stylesheet" type="text/css" href="listPage.css">
         <input type="file" name="eBird_1k_cleaned.csv" id="file" accept=".csv" > <br><br>
         <input type="button" id="btnsubmit" value="Submit" onclick="readCSVFile(1);" >
+        <!-- <input type="file" id="fileInput">
+        <button id="loadButton">Load CSV</button> -->
+
         <script src="listPage.js"></script>
         <style>
             button {
@@ -32,7 +35,7 @@
             </div>
         </nav>
         <main role="main">
-            <table id="tblcsvdata" border="1" style="border-collapse: collapse;">
+            <table id="tblcsvdata" border="1" style="border-collapse: collapse; ">
                 <thead>
                      <tr>
                         <th>Common Name</th>
@@ -176,6 +179,7 @@
             <!-- </div> -->
             <!-- <div id="pageNum">  -->
                 <div id="pageNumbers">
+                    <!-- <button style="background-color: thistle; color: black;border-radius: 1%; margin-left: 45%; position: relative; margin-top: 60%;margin-bottom: 5%;border-width: thin;" class="pageButton">Next Page</button> -->
                 <!-- <img id = "leftArrow" src = "images/bird-arrow.png" alt = "move through page by clicking side bird profile">
                 <div id="page1" style="margin-left: 25%;margin-top: -6.5%;background-color: rgb(225, 172, 107);border-color: rgb(141, 127, 101);color: rgb(146,123,84);">1</div>
                 <div id="page1" style="margin-left: 25%;margin-top: -28px;"></div>

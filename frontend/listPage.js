@@ -1,6 +1,40 @@
 var currentPage = 1;
 var totalPages = 10; // Total number of pages
 
+// var fileInput = document.getElementById('fileInput');
+// var loadButton = document.getElementById('loadButton');
+
+// loadButton.addEventListener('click', function() {
+//   var file = fileInput.files[0];
+//   var reader = new FileReader();
+
+//   reader.onload = function(e) {
+//     var csvData = e.target.result;
+//     var rows = csvData.split('\n');
+
+//     // Rest of the code to process the CSV data
+//     for (var i = 0; i < rows.length; i++) {
+//       var columns = rows[i].split(',');
+//       // Process each column of the CSV data
+//       // Example: Log each column to the console
+//       console.log(columns);
+//     }
+//   };
+
+//   var csvFilePath = '../eBird_1k_cleaned.csv'; // Replace with your CSV file path
+// //   alert(csvFilePath)
+//   var url = new URL(csvFilePath, window.location.href).href;
+//   fetch(url)
+//     .then(response => response.text())
+//     .then(csvData => {
+//       reader.readAsText(file);
+//     })
+//     .catch(error => {
+//       console.error('Error:', error);
+//     });
+// });
+
+
 function readCSVFile(page){
     var files = document.querySelector('#file').files;
     if(files.length > 0 ){
@@ -28,7 +62,7 @@ function readCSVFile(page){
 
               
               // Loop on the row Array (change row=0 if you also want to read 1st row)
-              for (var row = 1; row < 11; row++) {
+              for (var row = 1; row < rowData.length; row++) {
                 
                     // Insert a row at the end of table
                     var newRow = tbodyEl.insertRow();
@@ -86,6 +120,14 @@ function readCSVFile(page){
     }
 
     // Initial setup
-    updatePageNumbers();
-    loadPage(currentPage);
-    alert("working")
+    // updatePageNumbers();
+    // loadPage(currentPage);
+    // alert("working")
+
+    // var button = document.getElementsByClassName('pageButton');
+
+    // // Add event listener to the button
+    // button.addEventListener('click', function() {
+    // // Code to be executed when the button is clicked
+    //     alert('Button clicked!');
+    // });

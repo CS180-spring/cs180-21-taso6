@@ -93,7 +93,7 @@ tbody{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: 110%;
-    padding: 3%;
+    padding: 5%;
     /* font-weight: bold; */
     background-color: rgba(216, 191, 216, 0.433);
     border-width: medium;
@@ -178,6 +178,7 @@ table{
     border-top: 0px;
     border-color: black;
     border-style: solid;
+    /* position: relative; */
 }
 .page-number {
     margin-right: 5px;
@@ -186,4 +187,8 @@ table{
 
   .page-number.active {
     font-weight: bold;
+  }
+  .button-clicked {
+    background-color: red;
+    color: white;
   }
