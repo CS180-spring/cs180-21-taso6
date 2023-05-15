@@ -8,122 +8,122 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug"/>
+				<Option working_dir="/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cs180_21_taso6">
-				<Option output="C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug/cs180_21_taso6.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug"/>
+				<Option output="/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/cs180_21_taso6" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/Eddy/CLionProjects/cs180-21-taso6/backend"/>
-					<Add directory="C:/Users/Eddy/CLionProjects/cs180-21-taso6/UI"/>
-					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include/c++"/>
-					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include/c++/backward"/>
-					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include"/>
-					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include-fixed"/>
-					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="/Users/franky/CLionProjects/cs180-21-taso6/backend"/>
+					<Add directory="/Users/franky/CLionProjects/cs180-21-taso6/UI"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 cs180_21_taso6"/>
-					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 cs180_21_taso6"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cs180_21_taso6/fast">
-				<Option output="C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug/cs180_21_taso6.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug"/>
+				<Option output="/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/cs180_21_taso6" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/Eddy/CLionProjects/cs180-21-taso6/backend"/>
-					<Add directory="C:/Users/Eddy/CLionProjects/cs180-21-taso6/UI"/>
-					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include/c++"/>
-					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include/c++/backward"/>
-					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include"/>
-					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include-fixed"/>
-					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="/Users/franky/CLionProjects/cs180-21-taso6/backend"/>
+					<Add directory="/Users/franky/CLionProjects/cs180-21-taso6/UI"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 cs180_21_taso6/fast"/>
-					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 cs180_21_taso6/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug"/>
+				<Option working_dir="/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug"/>
+				<Option working_dir="/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Eddy/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Eddy/CLionProjects/cs180-21-taso6/UI/accountMenu.h">
+		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/UI/accountMenu.h">
 			<Option target="cs180_21_taso6"/>
 		</Unit>
-		<Unit filename="C:/Users/Eddy/CLionProjects/cs180-21-taso6/UI/accountSystem.cpp">
+		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/UI/accountSystem.cpp">
 			<Option target="cs180_21_taso6"/>
 		</Unit>
-		<Unit filename="C:/Users/Eddy/CLionProjects/cs180-21-taso6/UI/accountSystem.h">
+		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/UI/accountSystem.h">
 			<Option target="cs180_21_taso6"/>
 		</Unit>
-		<Unit filename="C:/Users/Eddy/CLionProjects/cs180-21-taso6/backend/Initialize.cpp">
+		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/backend/Initialize.cpp">
 			<Option target="cs180_21_taso6"/>
 		</Unit>
-		<Unit filename="C:/Users/Eddy/CLionProjects/cs180-21-taso6/backend/Initialize.h">
+		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/backend/Initialize.h">
 			<Option target="cs180_21_taso6"/>
 		</Unit>
-		<Unit filename="C:/Users/Eddy/CLionProjects/cs180-21-taso6/backend/User.cpp">
+		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/backend/User.cpp">
 			<Option target="cs180_21_taso6"/>
 		</Unit>
-		<Unit filename="C:/Users/Eddy/CLionProjects/cs180-21-taso6/backend/User.h">
+		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/backend/User.h">
 			<Option target="cs180_21_taso6"/>
 		</Unit>
-		<Unit filename="C:/Users/Eddy/CLionProjects/cs180-21-taso6/backend/bird_record.cpp">
+		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/backend/bird_record.cpp">
 			<Option target="cs180_21_taso6"/>
 		</Unit>
-		<Unit filename="C:/Users/Eddy/CLionProjects/cs180-21-taso6/backend/bird_record.h">
+		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/backend/bird_record.h">
 			<Option target="cs180_21_taso6"/>
 		</Unit>
-		<Unit filename="C:/Users/Eddy/CLionProjects/cs180-21-taso6/backend/collection.cpp">
+		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/backend/collection.cpp">
 			<Option target="cs180_21_taso6"/>
 		</Unit>
-		<Unit filename="C:/Users/Eddy/CLionProjects/cs180-21-taso6/backend/collection.h">
+		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/backend/collection.h">
 			<Option target="cs180_21_taso6"/>
 		</Unit>
-		<Unit filename="C:/Users/Eddy/CLionProjects/cs180-21-taso6/backend/parse.h">
+		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/backend/parse.h">
 			<Option target="cs180_21_taso6"/>
 		</Unit>
-		<Unit filename="C:/Users/Eddy/CLionProjects/cs180-21-taso6/main.cpp">
+		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/main.cpp">
 			<Option target="cs180_21_taso6"/>
 		</Unit>
-		<Unit filename="C:/Users/Eddy/CLionProjects/cs180-21-taso6/CMakeLists.txt">
+		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

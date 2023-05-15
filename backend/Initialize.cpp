@@ -1,4 +1,7 @@
 #include "Initialize.h"
+#include <stdio.h>
+#include <fstream>
+#include <cstdio>
 //#include "parse.h"
 //#include "collection.h"
 
@@ -19,4 +22,7 @@ void Database::readFile(string file){
 void Database::createCollection(string fileName, string name, string username) {
     Collection collection(fileName, name, username);
     collections.push_back(collection);
+}
+void Database::deleteFile(char fileName[20]) {
+
 }
