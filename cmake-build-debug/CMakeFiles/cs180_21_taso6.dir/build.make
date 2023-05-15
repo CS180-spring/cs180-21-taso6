@@ -69,38 +69,10 @@ include CMakeFiles/cs180_21_taso6.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cs180_21_taso6.dir/flags.make
 
-CMakeFiles/cs180_21_taso6.dir/backend/collection.cpp.o: CMakeFiles/cs180_21_taso6.dir/flags.make
-CMakeFiles/cs180_21_taso6.dir/backend/collection.cpp.o: /Users/franky/CLionProjects/cs180-21-taso6/backend/collection.cpp
-CMakeFiles/cs180_21_taso6.dir/backend/collection.cpp.o: CMakeFiles/cs180_21_taso6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cs180_21_taso6.dir/backend/collection.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cs180_21_taso6.dir/backend/collection.cpp.o -MF CMakeFiles/cs180_21_taso6.dir/backend/collection.cpp.o.d -o CMakeFiles/cs180_21_taso6.dir/backend/collection.cpp.o -c /Users/franky/CLionProjects/cs180-21-taso6/backend/collection.cpp
-
-CMakeFiles/cs180_21_taso6.dir/backend/collection.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs180_21_taso6.dir/backend/collection.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/franky/CLionProjects/cs180-21-taso6/backend/collection.cpp > CMakeFiles/cs180_21_taso6.dir/backend/collection.cpp.i
-
-CMakeFiles/cs180_21_taso6.dir/backend/collection.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs180_21_taso6.dir/backend/collection.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/franky/CLionProjects/cs180-21-taso6/backend/collection.cpp -o CMakeFiles/cs180_21_taso6.dir/backend/collection.cpp.s
-
-CMakeFiles/cs180_21_taso6.dir/backend/Initialize.cpp.o: CMakeFiles/cs180_21_taso6.dir/flags.make
-CMakeFiles/cs180_21_taso6.dir/backend/Initialize.cpp.o: /Users/franky/CLionProjects/cs180-21-taso6/backend/Initialize.cpp
-CMakeFiles/cs180_21_taso6.dir/backend/Initialize.cpp.o: CMakeFiles/cs180_21_taso6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cs180_21_taso6.dir/backend/Initialize.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cs180_21_taso6.dir/backend/Initialize.cpp.o -MF CMakeFiles/cs180_21_taso6.dir/backend/Initialize.cpp.o.d -o CMakeFiles/cs180_21_taso6.dir/backend/Initialize.cpp.o -c /Users/franky/CLionProjects/cs180-21-taso6/backend/Initialize.cpp
-
-CMakeFiles/cs180_21_taso6.dir/backend/Initialize.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs180_21_taso6.dir/backend/Initialize.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/franky/CLionProjects/cs180-21-taso6/backend/Initialize.cpp > CMakeFiles/cs180_21_taso6.dir/backend/Initialize.cpp.i
-
-CMakeFiles/cs180_21_taso6.dir/backend/Initialize.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs180_21_taso6.dir/backend/Initialize.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/franky/CLionProjects/cs180-21-taso6/backend/Initialize.cpp -o CMakeFiles/cs180_21_taso6.dir/backend/Initialize.cpp.s
-
 CMakeFiles/cs180_21_taso6.dir/backend/User.cpp.o: CMakeFiles/cs180_21_taso6.dir/flags.make
 CMakeFiles/cs180_21_taso6.dir/backend/User.cpp.o: /Users/franky/CLionProjects/cs180-21-taso6/backend/User.cpp
 CMakeFiles/cs180_21_taso6.dir/backend/User.cpp.o: CMakeFiles/cs180_21_taso6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cs180_21_taso6.dir/backend/User.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cs180_21_taso6.dir/backend/User.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cs180_21_taso6.dir/backend/User.cpp.o -MF CMakeFiles/cs180_21_taso6.dir/backend/User.cpp.o.d -o CMakeFiles/cs180_21_taso6.dir/backend/User.cpp.o -c /Users/franky/CLionProjects/cs180-21-taso6/backend/User.cpp
 
 CMakeFiles/cs180_21_taso6.dir/backend/User.cpp.i: cmake_force
@@ -114,7 +86,7 @@ CMakeFiles/cs180_21_taso6.dir/backend/User.cpp.s: cmake_force
 CMakeFiles/cs180_21_taso6.dir/UI/accountSystem.cpp.o: CMakeFiles/cs180_21_taso6.dir/flags.make
 CMakeFiles/cs180_21_taso6.dir/UI/accountSystem.cpp.o: /Users/franky/CLionProjects/cs180-21-taso6/UI/accountSystem.cpp
 CMakeFiles/cs180_21_taso6.dir/UI/accountSystem.cpp.o: CMakeFiles/cs180_21_taso6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cs180_21_taso6.dir/UI/accountSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cs180_21_taso6.dir/UI/accountSystem.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cs180_21_taso6.dir/UI/accountSystem.cpp.o -MF CMakeFiles/cs180_21_taso6.dir/UI/accountSystem.cpp.o.d -o CMakeFiles/cs180_21_taso6.dir/UI/accountSystem.cpp.o -c /Users/franky/CLionProjects/cs180-21-taso6/UI/accountSystem.cpp
 
 CMakeFiles/cs180_21_taso6.dir/UI/accountSystem.cpp.i: cmake_force
@@ -128,7 +100,7 @@ CMakeFiles/cs180_21_taso6.dir/UI/accountSystem.cpp.s: cmake_force
 CMakeFiles/cs180_21_taso6.dir/main.cpp.o: CMakeFiles/cs180_21_taso6.dir/flags.make
 CMakeFiles/cs180_21_taso6.dir/main.cpp.o: /Users/franky/CLionProjects/cs180-21-taso6/main.cpp
 CMakeFiles/cs180_21_taso6.dir/main.cpp.o: CMakeFiles/cs180_21_taso6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cs180_21_taso6.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cs180_21_taso6.dir/main.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cs180_21_taso6.dir/main.cpp.o -MF CMakeFiles/cs180_21_taso6.dir/main.cpp.o.d -o CMakeFiles/cs180_21_taso6.dir/main.cpp.o -c /Users/franky/CLionProjects/cs180-21-taso6/main.cpp
 
 CMakeFiles/cs180_21_taso6.dir/main.cpp.i: cmake_force
@@ -142,7 +114,7 @@ CMakeFiles/cs180_21_taso6.dir/main.cpp.s: cmake_force
 CMakeFiles/cs180_21_taso6.dir/backend/bird_record.cpp.o: CMakeFiles/cs180_21_taso6.dir/flags.make
 CMakeFiles/cs180_21_taso6.dir/backend/bird_record.cpp.o: /Users/franky/CLionProjects/cs180-21-taso6/backend/bird_record.cpp
 CMakeFiles/cs180_21_taso6.dir/backend/bird_record.cpp.o: CMakeFiles/cs180_21_taso6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cs180_21_taso6.dir/backend/bird_record.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cs180_21_taso6.dir/backend/bird_record.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cs180_21_taso6.dir/backend/bird_record.cpp.o -MF CMakeFiles/cs180_21_taso6.dir/backend/bird_record.cpp.o.d -o CMakeFiles/cs180_21_taso6.dir/backend/bird_record.cpp.o -c /Users/franky/CLionProjects/cs180-21-taso6/backend/bird_record.cpp
 
 CMakeFiles/cs180_21_taso6.dir/backend/bird_record.cpp.i: cmake_force
@@ -155,8 +127,6 @@ CMakeFiles/cs180_21_taso6.dir/backend/bird_record.cpp.s: cmake_force
 
 # Object files for target cs180_21_taso6
 cs180_21_taso6_OBJECTS = \
-"CMakeFiles/cs180_21_taso6.dir/backend/collection.cpp.o" \
-"CMakeFiles/cs180_21_taso6.dir/backend/Initialize.cpp.o" \
 "CMakeFiles/cs180_21_taso6.dir/backend/User.cpp.o" \
 "CMakeFiles/cs180_21_taso6.dir/UI/accountSystem.cpp.o" \
 "CMakeFiles/cs180_21_taso6.dir/main.cpp.o" \
@@ -165,15 +135,13 @@ cs180_21_taso6_OBJECTS = \
 # External object files for target cs180_21_taso6
 cs180_21_taso6_EXTERNAL_OBJECTS =
 
-cs180_21_taso6: CMakeFiles/cs180_21_taso6.dir/backend/collection.cpp.o
-cs180_21_taso6: CMakeFiles/cs180_21_taso6.dir/backend/Initialize.cpp.o
 cs180_21_taso6: CMakeFiles/cs180_21_taso6.dir/backend/User.cpp.o
 cs180_21_taso6: CMakeFiles/cs180_21_taso6.dir/UI/accountSystem.cpp.o
 cs180_21_taso6: CMakeFiles/cs180_21_taso6.dir/main.cpp.o
 cs180_21_taso6: CMakeFiles/cs180_21_taso6.dir/backend/bird_record.cpp.o
 cs180_21_taso6: CMakeFiles/cs180_21_taso6.dir/build.make
 cs180_21_taso6: CMakeFiles/cs180_21_taso6.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable cs180_21_taso6"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable cs180_21_taso6"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cs180_21_taso6.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

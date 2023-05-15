@@ -5,7 +5,7 @@
 		<Option title="cs180_21_taso6"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\Boost-1.81.0\;CMake Files\..\..\..\..\usr\local\lib\cmake\boost_headers-1.81.0\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/franky/CLionProjects/cs180-21-taso6/cmake-build-debug"/>
@@ -24,6 +24,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/local/Cellar/boost/1.81.0_1/include"/>
 					<Add directory="/Users/franky/CLionProjects/cs180-21-taso6/backend"/>
 					<Add directory="/Users/franky/CLionProjects/cs180-21-taso6/UI"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
@@ -47,6 +48,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/local/Cellar/boost/1.81.0_1/include"/>
 					<Add directory="/Users/franky/CLionProjects/cs180-21-taso6/backend"/>
 					<Add directory="/Users/franky/CLionProjects/cs180-21-taso6/UI"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
@@ -93,12 +95,6 @@
 		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/UI/accountSystem.h">
 			<Option target="cs180_21_taso6"/>
 		</Unit>
-		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/backend/Initialize.cpp">
-			<Option target="cs180_21_taso6"/>
-		</Unit>
-		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/backend/Initialize.h">
-			<Option target="cs180_21_taso6"/>
-		</Unit>
 		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/backend/User.cpp">
 			<Option target="cs180_21_taso6"/>
 		</Unit>
@@ -111,12 +107,6 @@
 		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/backend/bird_record.h">
 			<Option target="cs180_21_taso6"/>
 		</Unit>
-		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/backend/collection.cpp">
-			<Option target="cs180_21_taso6"/>
-		</Unit>
-		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/backend/collection.h">
-			<Option target="cs180_21_taso6"/>
-		</Unit>
 		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/backend/parse.h">
 			<Option target="cs180_21_taso6"/>
 		</Unit>
@@ -125,6 +115,18 @@
 		</Unit>
 		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/../../../../usr/local/lib/cmake/Boost-1.81.0/BoostConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Boost-1.81.0\"/>
+		</Unit>
+		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/../../../../usr/local/lib/cmake/Boost-1.81.0/BoostConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Boost-1.81.0\"/>
+		</Unit>
+		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/../../../../usr/local/lib/cmake/boost_headers-1.81.0/boost_headers-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\boost_headers-1.81.0\"/>
+		</Unit>
+		<Unit filename="/Users/franky/CLionProjects/cs180-21-taso6/../../../../usr/local/lib/cmake/boost_headers-1.81.0/boost_headers-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\boost_headers-1.81.0\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

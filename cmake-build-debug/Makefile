@@ -153,30 +153,6 @@ UI/accountSystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cs180_21_taso6.dir/build.make CMakeFiles/cs180_21_taso6.dir/UI/accountSystem.cpp.s
 .PHONY : UI/accountSystem.cpp.s
 
-backend/Initialize.o: backend/Initialize.cpp.o
-.PHONY : backend/Initialize.o
-
-# target to build an object file
-backend/Initialize.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cs180_21_taso6.dir/build.make CMakeFiles/cs180_21_taso6.dir/backend/Initialize.cpp.o
-.PHONY : backend/Initialize.cpp.o
-
-backend/Initialize.i: backend/Initialize.cpp.i
-.PHONY : backend/Initialize.i
-
-# target to preprocess a source file
-backend/Initialize.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cs180_21_taso6.dir/build.make CMakeFiles/cs180_21_taso6.dir/backend/Initialize.cpp.i
-.PHONY : backend/Initialize.cpp.i
-
-backend/Initialize.s: backend/Initialize.cpp.s
-.PHONY : backend/Initialize.s
-
-# target to generate assembly for a file
-backend/Initialize.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cs180_21_taso6.dir/build.make CMakeFiles/cs180_21_taso6.dir/backend/Initialize.cpp.s
-.PHONY : backend/Initialize.cpp.s
-
 backend/User.o: backend/User.cpp.o
 .PHONY : backend/User.o
 
@@ -225,30 +201,6 @@ backend/bird_record.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cs180_21_taso6.dir/build.make CMakeFiles/cs180_21_taso6.dir/backend/bird_record.cpp.s
 .PHONY : backend/bird_record.cpp.s
 
-backend/collection.o: backend/collection.cpp.o
-.PHONY : backend/collection.o
-
-# target to build an object file
-backend/collection.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cs180_21_taso6.dir/build.make CMakeFiles/cs180_21_taso6.dir/backend/collection.cpp.o
-.PHONY : backend/collection.cpp.o
-
-backend/collection.i: backend/collection.cpp.i
-.PHONY : backend/collection.i
-
-# target to preprocess a source file
-backend/collection.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cs180_21_taso6.dir/build.make CMakeFiles/cs180_21_taso6.dir/backend/collection.cpp.i
-.PHONY : backend/collection.cpp.i
-
-backend/collection.s: backend/collection.cpp.s
-.PHONY : backend/collection.s
-
-# target to generate assembly for a file
-backend/collection.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cs180_21_taso6.dir/build.make CMakeFiles/cs180_21_taso6.dir/backend/collection.cpp.s
-.PHONY : backend/collection.cpp.s
-
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -285,18 +237,12 @@ help:
 	@echo "... UI/accountSystem.o"
 	@echo "... UI/accountSystem.i"
 	@echo "... UI/accountSystem.s"
-	@echo "... backend/Initialize.o"
-	@echo "... backend/Initialize.i"
-	@echo "... backend/Initialize.s"
 	@echo "... backend/User.o"
 	@echo "... backend/User.i"
 	@echo "... backend/User.s"
 	@echo "... backend/bird_record.o"
 	@echo "... backend/bird_record.i"
 	@echo "... backend/bird_record.s"
-	@echo "... backend/collection.o"
-	@echo "... backend/collection.i"
-	@echo "... backend/collection.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

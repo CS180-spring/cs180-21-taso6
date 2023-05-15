@@ -37,7 +37,7 @@ string parseCSV(string fileName, string lookfor, int lineNumber) {
     fstream file;
     file.open(fileName);
     if(file.fail()){
-        cout << "failed\n";
+        cout << "failed yuh yuh yuh\n";
         exit(-1) ;
     }
     string attributes;

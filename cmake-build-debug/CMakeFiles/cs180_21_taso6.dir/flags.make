@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/franky/CLionProjects/cs180-21-taso6/backend -I/Users/franky/CLionProjects/cs180-21-taso6/UI
+CXX_INCLUDES = -I/usr/local/Cellar/boost/1.81.0_1/include -I/Users/franky/CLionProjects/cs180-21-taso6/backend -I/Users/franky/CLionProjects/cs180-21-taso6/UI
 
 CXX_FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++14
 

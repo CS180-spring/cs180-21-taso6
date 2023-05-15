@@ -23,6 +23,6 @@ void Database::createCollection(string fileName, string name, string username) {
     Collection collection(fileName, name, username);
     collections.push_back(collection);
 }
-void Database::deleteFile(char fileName[20]) {
+/*void Database::deleteFile(char fileName[20]) {
 
-}
+}*/
