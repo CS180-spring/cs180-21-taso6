@@ -49,7 +49,7 @@ function loadPage(csvdata) {
 
   
   // Loop on the row Array (change row=0 if you also want to read 1st row)
-  for (var row = currentPage*1; row < currentPage+11; row++) {
+  for (var row = currentPage; row < currentPage+10; row++) {
     
         // Insert a row at the end of table
         var newRow = tbodyEl.insertRow();
