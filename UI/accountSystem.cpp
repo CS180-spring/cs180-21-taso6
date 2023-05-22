@@ -57,3 +57,67 @@ void registration(Database curData) {
 void forgot() {
     //forgot password function
 }
+void delete_file(Database curData){
+    //char fileName[30] = "../assets/";
+
+    string directory = "assets/";
+    string extend = ".csv";
+    string userInput;
+    cout << "Enter a file you would like to delete" << endl;
+    cin.ignore();
+    getline(cin,userInput);
+
+    string result;
+    result = directory + userInput + extend;
+
+    const int length = result.length();
+    char* input = new char[length + 1];
+    std::strcpy(input, result.c_str());
+
+    if(remove(input) != 0) {
+        ::perror("Error Deleting File");
+        delete[] input;
+        return;
+    }
+    else
+        ::puts(("File Successfuly Deleted"));
+        delete[] input;
+        return;
+}
+void create_file(Database curData){
+    string directory = "assets/";
+    string extend = ".csv";
+    string userInput;
+    cout << "Enter a file you would like to create" << endl;
+    cin.ignore();
+    getline(cin,userInput);
+
+    string result;
+    result = directory + userInput + extend;
+    cout << result << endl;
+    fstream file;
+    //ofstream record;
+
+    file.open(result, ios::out);
+
+    if(!file){
+        cout << "Error in file Creation! at File" << endl;
+        return;
+    }
+    else{
+        cout << "File Creation successful." <<endl;
+    }
+
+    /*if(!record){
+        cout << "Error in file Creation!" << endl;
+        return;
+    }
+    else{
+        cout << "File Creation successful." <<endl;
+    }
+    record.open("../assets/allCSV.txt", std::ios_base::app);
+    record << "\n" << userInput << ".csv";
+    record.close();
+*/
+    file.close();
+}

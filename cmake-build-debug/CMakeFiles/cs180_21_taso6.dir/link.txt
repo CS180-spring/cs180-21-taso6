@@ -1,3 +1,1 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cs180_21_taso6.dir/objects.a
-C:\mingw32\bin\ar.exe qc CMakeFiles\cs180_21_taso6.dir/objects.a @CMakeFiles\cs180_21_taso6.dir\objects1.rsp
-C:\mingw32\bin\c++.exe -g -Wl,--whole-archive CMakeFiles\cs180_21_taso6.dir/objects.a -Wl,--no-whole-archive -o cs180_21_taso6.exe -Wl,--out-implib,libcs180_21_taso6.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cs180_21_taso6.dir\linkLibs.rsp
+/Library/Developer/CommandLineTools/usr/bin/c++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cs180_21_taso6.dir/backend/User.cpp.o CMakeFiles/cs180_21_taso6.dir/UI/accountSystem.cpp.o CMakeFiles/cs180_21_taso6.dir/main.cpp.o CMakeFiles/cs180_21_taso6.dir/backend/bird_record.cpp.o -o cs180_21_taso6 

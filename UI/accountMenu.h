@@ -26,19 +26,25 @@ void userView(){
       cout << endl;
 
       switch(input) {
-        case 1:
-          login(curData);
-          break;
-        case 2:
-          registration(curData);
-          break;
-        case 3:
-          forgot();
-          break;
-        case 4:
-//          cout << "Theres no exit function yet lol" << endl;
-            cout << "X | Y | COMMON NAME | SCIENTIFIC NAME | STATE | COUNTY | LOCALITY | OBSERVATION DATE" << endl;
-          break;
+          case 1:
+              login(curData);
+              break;
+          case 2:
+              registration(curData);
+              break;
+          case 3:
+              forgot();
+              break;
+          case 4:
+              cout << "X | Y | COMMON NAME | SCIENTIFIC NAME | STATE | COUNTY | LOCALITY | OBSERVATION DATE" << endl;
+            break;
+          case 5:
+              delete_file(curData);
+              break;
+          case 6:
+              create_file(curData);
+              break;
+
         default:
           system("cls");
           cout << "Not a valid response, please try again." << endl;
