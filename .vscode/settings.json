@@ -3,9 +3,6 @@
         "iosfwd": "cpp",
         "istream": "cpp",
         "ostream": "cpp",
-        "string": "cpp",
-        "filesystem": "cpp",
-        "vector": "cpp",
-        "fstream": "cpp"
-    }
+    },
+    "liveServer.settings.port": 5501
 }
