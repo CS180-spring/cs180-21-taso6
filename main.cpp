@@ -1,4 +1,3 @@
-#include <iostream>
 //#include "backend/Initialize.h"
 //#include "UI/accountSystem.h"
 #include "UI/accountMenu.h"
