@@ -1,7 +1,7 @@
 #include <iostream>
-//#include "backend/Initialize.h"
-//#include "UI/accountSystem.h"
-//#include "UI/accountMenu.h"
+/*#include "backend/Initialize.h"
+#include "UI/accountSystem.h"
+#include "UI/accountMenu.h"*/
 //#include "backend/collection.h"
 #include "backend/crow_all.h"
 #include "backend/parse.h"
@@ -9,10 +9,10 @@
 using namespace std;
 
 int main() {
-    /*Collection coll("assets/eBird_1k.csv", "e_Bird", "admin");
-    userView();
-    coll.load();
-    coll.show();*/
+//    Collection coll("assets/eBird_1k.csv", "e_Bird", "admin");
+//    userView();
+//    coll.load();
+//    coll.show();
     crow::SimpleApp app; //define your crow application
 
     CROW_ROUTE(app, "/")([](){

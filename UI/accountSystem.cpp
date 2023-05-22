@@ -60,7 +60,7 @@ void forgot() {
 void delete_file(Database curData){
     //char fileName[30] = "../assets/";
 
-    string directory = "../assets/";
+    string directory = "assets/";
     string extend = ".csv";
     string userInput;
     cout << "Enter a file you would like to delete" << endl;
@@ -85,7 +85,7 @@ void delete_file(Database curData){
         return;
 }
 void create_file(Database curData){
-    string directory = "../assets/";
+    string directory = "assets/";
     string extend = ".csv";
     string userInput;
     cout << "Enter a file you would like to create" << endl;
@@ -94,21 +94,21 @@ void create_file(Database curData){
 
     string result;
     result = directory + userInput + extend;
-
+    cout << result << endl;
     fstream file;
-    ofstream record;
+    //ofstream record;
 
     file.open(result, ios::out);
 
     if(!file){
-        cout << "Error in file Creation!" << endl;
+        cout << "Error in file Creation! at File" << endl;
         return;
     }
     else{
         cout << "File Creation successful." <<endl;
     }
 
-    if(!record){
+    /*if(!record){
         cout << "Error in file Creation!" << endl;
         return;
     }
@@ -118,6 +118,6 @@ void create_file(Database curData){
     record.open("../assets/allCSV.txt", std::ios_base::app);
     record << "\n" << userInput << ".csv";
     record.close();
-
+*/
     file.close();
 }

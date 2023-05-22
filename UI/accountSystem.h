@@ -1,6 +1,7 @@
 #ifndef ACCOUNTSYSTEM_H
 #define ACCOUNTSYSTEM_H
 #include "Initialize.h"
+#include <fstream>
 
 void login(Database curData);
 void forgot();

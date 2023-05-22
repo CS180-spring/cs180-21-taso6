@@ -15,8 +15,8 @@ include_directories(backend)
 include_directories(UI)
 
 add_executable(cs180_21_taso6
-       # backend/collection.cpp
-       # backend/collection.h
+        #backend/collection.cpp
+        #backend/collection.h
         #backend/Initialize.cpp
         #backend/Initialize.h
         backend/parse.h
