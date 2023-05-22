@@ -19,8 +19,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b89c180-181e-4420-bc6d-5d055baa819e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/after_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/after_login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/forgotpass.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/forgotpass.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/homepage.html" afterDir="false" />
