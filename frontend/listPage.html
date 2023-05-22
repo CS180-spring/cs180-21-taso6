@@ -2,6 +2,11 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" type="text/css" href="listPage.css">
+        <input type="file" name="eBird_1k_cleaned.csv" id="file" accept=".csv" > <br><br>
+        <input type="button" id="btnsubmit" value="Submit" onclick="readCSVFile(1);" >
+        <!-- <input type="file" id="fileInput">
+        <button id="loadButton">Load CSV</button> -->
+
         <script src="listPage.js"></script>
         <style>
             button {
@@ -31,6 +36,11 @@
             </div>
         </nav>
         <main role="main">
+<<<<<<< HEAD
+            <div class="data">
+                <div id = 'pageNumberText'>
+                    Birby Database
+=======
             <div id="box-styles">
                 <div id="row-0">
                     <div id="date-headings"  style="background-color: thistle;">
@@ -157,18 +167,33 @@
                     <div id = "userID-headings">
                         <div id="data-text">User ID</div>
                     </div>
+>>>>>>> main
                 </div>
+                
+                <table id="tblcsvdata" border="1" style="border-collapse: collapse; ">
+                    <thead>
+                        <tr>
+                            <th>Common Name</th>
+                            <th>Locality</th>
+                            <th>Observation Date</th>
+                            <th>User ID</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+        
+                    </tbody>
+                </table>
             </div>
-            <div id="pageNum"> 
-                <!-- <img id = "leftArrow" src = "images/bird-arrow.png" alt = "move through page by clicking side bird profile"> -->
-                <!-- <div id="page1" style="margin-left: 25%;margin-top: -6.5%;background-color: rgb(225, 172, 107);border-color: rgb(141, 127, 101);color: rgb(146,123,84);">1</div> -->
-                <!-- <div id="page1" style="margin-left: 25%;margin-top: -28px;"></div>
-                <div id="page1" style="margin-left: 50%;margin-top: -4.4%;">2</div>
-                <div id="page1" style="margin-left: 75%;margin-top: -4.3%;">3</div>
-                <img id = "leftArrow" src = "images/bird-arrow.png" alt = "move through page by clicking side bird profile" style="transform: scaleX(-1);margin-top: -120px;margin-left: 94%;"> -->
-                <!-- <div id="page1"></div> -->
-                <!-- <input type="button"> -->
-            </div> 
+            <div class="bottomButtons">
+                <button id="pageButton1">Prev Page</button>
+                <button id="pageButton2">Next Page</button>
+            </div>
+            <script>
+                const button = document.getElementById('pageButton1');
+                button.addEventListener('click', buttonClickedPrev);
+                const button2 = document.getElementById('pageButton2');
+                button2.addEventListener('click', buttonClickedNext);
+            </script>
         </main>
     </body>
 </html>

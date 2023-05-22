@@ -62,7 +62,8 @@ body{
     border-color: black;
     border-style: solid;
 }
-#row-0, #row-1, #row-2, #row-3, #row-4, #row-5, #row-6, #row-7, #row-8,#row-9,#row-10{
+/* .row, row-0, #row-1, #row-2, #row-3, #row-4, #row-5, #row-6, #row-7, #row-8,#row-9,#row-10{ */
+.row{
     /* margin-top: -3.5px; */
     /* height: 10.46%; */
     height: 10.69%;
@@ -71,57 +72,26 @@ body{
     border-top-color: black;
     border-top-style: solid;
 }
-#date-headings{
-    height: 10.69%;
-    width: 25%;
-    /* background-color: thistle; */
-    border-right: 10%;
-    border-right-color: black;
-    border-right-style: solid;
-    position: absolute; 
-}
-#data-text-heading{
+
+th{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: 150%;
-    padding-top: 8%;
+    padding: 3%;
     font-weight: bold;
+    background-color: thistle;
+    border-width: medium;
+    border-style: solid;
 }
-#data-text{
-    font-family: Arial, Helvetica, sans-serif;
+tbody{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: 110%;
-    padding-top: 10%;
-}
-#birdName-headings{
-    height: 10.69%;
-    width: 30%;
-    /* background-color: thistle; */
-    
-    border-right: 10%;
-    border-right-color: black;
-    border-right-style: solid;
-    margin-left: 25.3%;
-    position: absolute;
-}
-
-#location-headings{
-    height: 10.69%;
-    width: 24.1%;
-    /* background-color: thistle; */
-    
-    border-right: 10%;
-    border-right-color: black;
-    border-right-style: solid;
-    margin-left: 55.6%;
-    position: absolute;
-}
-#userID-headings{
-    height: 10.69%;
-    width: 20%;
-    /* background-color: thistle; */
-    margin-left: 80%;
-    position: absolute;
+    padding: 5%;
+    /* font-weight: bold; */
+    background-color: rgba(216, 191, 216, 0.433);
+    border-width: medium;
+    border-style: solid;
 }
 #pageNum{
     height: 5%;
@@ -150,4 +120,50 @@ body{
     text-align: center;
     /* font-weight: bold; */
     font-size: x-large;
+}
+.class {
+    /* background-color: orange; */
+    position: relative;
+}
+.bottomButtons {
+    margin-left: 43%; 
+    position: relative; 
+    margin-top: 60%;
+    margin-bottom: 15%;
+}
+/* table th, table td{ */
+table{
+    padding: 5px;
+    width: 68%;
+    height: 90%;
+    /* background-color: cornflowerblue; */
+    background-color: rgba(216, 191, 216, 0.433);
+    
+    margin-top: 5%;
+    margin-left: 15%;
+    position: absolute;
+    border-width: 10%;
+    border-top: 0px;
+    border-color: black;
+    border-style: solid;
+    /* position: relative; */
+}
+.page-number {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+  .page-number.active {
+    font-weight: bold;
+  }
+  .button-clicked {
+    background-color: red;
+    color: white;
+  }
+#pageButton1, #pageButton2 {
+    background-color: thistle; 
+    color: black;
+    border-radius: 1%; 
+    border-width: thin;
+    margin-bottom: 15%;
 }
