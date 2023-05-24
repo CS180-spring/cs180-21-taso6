@@ -167,3 +167,11 @@ table{
     border-width: thin;
     margin-bottom: 15%;
 }
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+}
