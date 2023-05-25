@@ -28,23 +28,23 @@ void login(Database curData) {
 //    }
 }
 
-void registration(Database curData) {
-    string username;
-    string password;
+void registration(Database curData, string username, string password) {
+    string user = username;
+    string pass = password;
 
     ofstream test;
     test.open("assets/records.csv", std::ios_base::app);
 
-    cout << "Enter a Username" << endl;
-    cout << endl;
-    cin >> username;
-//    while(curData.left->lookUp(username) != ""){
-        cout << "Username is taken, please choose another" << endl;
-        cin >> username;
-//    }
-    cout << endl;
-    cout << "Enter a Password" << endl;
-    cin >> password;
+//    cout << "Enter a Username" << endl;
+//    cout << endl;
+//    cin >> username;
+////    while(curData.left->lookUp(username) != ""){
+//        cout << "Username is taken, please choose another" << endl;
+//        cin >> username;
+////    }
+//    cout << endl;
+//    cout << "Enter a Password" << endl;
+//    cin >> password;
 
     test << endl << username << "," << password << ",0";
     test.close();
@@ -52,7 +52,7 @@ void registration(Database curData) {
 //    curData.left->moreMap(username, password);
 
 //    system("clear");
-    cout << "Your account has been created!" << endl;
+// cout << "Your account has been created!" << endl;
 }
 void forgot() {
     //forgot password function
