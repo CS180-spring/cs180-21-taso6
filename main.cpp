@@ -24,7 +24,7 @@ int main() {
 
     CROW_ROUTE(app, "/")([](const crow::request& req, crow::response& res){
         // Serve the HTML file
-        std::ifstream file("Frontend/login_frontend.html");
+        std::ifstream file("Frontend/listPage.html");
         if (file.is_open()) {
             std::stringstream buffer;
             buffer << file.rdbuf();
@@ -163,7 +163,7 @@ CROW_ROUTE(app, "/submit")
                     if (extension == "css") {
                         content_type = "text/css";
                     } else if (extension == "js") {
-                        content_type = "text/javascript";
+                        content_type = "application/javascript";
                     } else if (extension == "png") {
                         content_type = "image/png";
                     } else if (extension == "jpg" || extension == "jpeg") {
