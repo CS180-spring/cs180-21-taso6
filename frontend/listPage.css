@@ -1,0 +1,216 @@
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #3e8e41;
+}
+.logoutPage {
+    position: absolute;
+    left: 90%;
+}
+.profile {
+    position: absolute;
+    margin-left: 18%;
+}
+.database {
+    position: absolute;
+    margin-left: 10%;
+}
+.home {
+    position: absolute;
+    margin-left: 3%;
+}
+
+#logo {
+    position: absolute;
+    left: 48%;
+    width: 100px;
+}
+#logoText{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 75px;
+    padding-top: 70px;
+}
+nav{
+    /* font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold; */
+    background-color: rgba(20, 87, 255, 0.124);
+    padding-bottom: 5%;
+    position: relative;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+#box-styles {
+    width: 68%;
+    height: 90%;
+    /* background-color: cornflowerblue; */
+    background-color: rgba(216, 191, 216, 0.433);
+    
+    margin-top: 5%;
+    margin-left: 15%;
+    position: absolute;
+    border-width: 10%;
+    border-top: 0px;
+    border-color: black;
+    border-style: solid;
+}
+/* .row, row-0, #row-1, #row-2, #row-3, #row-4, #row-5, #row-6, #row-7, #row-8,#row-9,#row-10{ */
+.row{
+    /* margin-top: -3.5px; */
+    /* height: 10.46%; */
+    height: 10.69%;
+    /* background-color: coral; */
+    border-top: 10%;
+    border-top-color: black;
+    border-top-style: solid;
+}
+
+th{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 150%;
+    padding: 3%;
+    font-weight: bold;
+    background-color: thistle;
+    border-width: medium;
+    border-style: solid;
+}
+tbody{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 110%;
+    padding: 5%;
+    /* font-weight: bold; */
+    background-color: rgba(216, 191, 216, 0.433);
+    border-width: medium;
+    border-style: solid;
+}
+#pageNum{
+    height: 5%;
+    width: 50%;
+    /* background-color: wheat; */
+    align-self: center;
+    margin-left: 22%;
+    /* margin-top: 58%; */
+    /* bottom: 50%; */
+    bottom: -75%;
+    position: absolute;
+}
+#leftArrow{
+    height: 120%;
+}
+
+#page1{
+    height: 50%;
+    width: 5%;
+    /* background-color: rgb(76, 0, 139); */
+    background-color: rgb(169, 226, 250);
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    color: black;
+    text-align: center;
+    /* font-weight: bold; */
+    font-size: x-large;
+}
+.class {
+    /* background-color: orange; */
+    position: relative;
+}
+.bottomButtons {
+    margin-left: 43%; 
+    position: relative; 
+    margin-top: 60%;
+    margin-bottom: 15%;
+}
+/* table th, table td{ */
+table{
+    padding: 5px;
+    width: 68%;
+    height: 90%;
+    /* background-color: cornflowerblue; */
+    background-color: rgba(216, 191, 216, 0.433);
+    
+    margin-top: 5%;
+    margin-left: 15%;
+    position: absolute;
+    border-width: 10%;
+    border-top: 0px;
+    border-color: black;
+    border-style: solid;
+    /* position: relative; */
+}
+.page-number {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+  .page-number.active {
+    font-weight: bold;
+  }
+  .button-clicked {
+    background-color: red;
+    color: white;
+  }
+#pageButton1, #pageButton2 {
+    background-color: thistle; 
+    color: black;
+    border-radius: 1%; 
+    border-width: thin;
+    margin-bottom: 15%;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+}
+#pageNumberText {
+    /* background-color: #3e8e41; */
+    margin-top: 3%;
+    text-align: right;
+    margin-right: 3%;
+}
+.profile-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px #ccc;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+input[type=text], input[type=email], input[type=password] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+form{
+    margin-bottom: 10%;
+}

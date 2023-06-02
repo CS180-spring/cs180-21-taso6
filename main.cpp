@@ -38,21 +38,6 @@ int main() {
         }
         res.end();
     });
-    CROW_ROUTE(app, "/register.html")([](const crow::request& req, crow::response& res){
-        std::ifstream file("Frontend/register.html");
-        if (file.is_open()) {
-            std::stringstream buffer;
-            buffer << file.rdbuf();
-            file.close();
-
-            res.set_header("Content-Type", "text/html");
-            res.write(buffer.str());
-        } else {
-            res.code = 404;
-            res.write("File not found");
-        }
-        res.end();
-    });
 
 
 CROW_ROUTE(app, "/submit")
@@ -192,10 +177,24 @@ CROW_ROUTE(app, "/submit")
             });
 
     CROW_ROUTE(app, "/forgotpass.html")([]{
-        auto page = crow::mustache::load("Frontend/forgotpass.html");
+        auto page = crow::mustache::load("forgotpass.html");
         return page.render();
     });
+    CROW_ROUTE(app, "/register.html")([](const crow::request& req, crow::response& res){
+        std::ifstream file("Frontend/register.html");
+        if (file.is_open()) {
+            std::stringstream buffer;
+            buffer << file.rdbuf();
+            file.close();
 
+            res.set_header("Content-Type", "text/html");
+            res.write(buffer.str());
+        } else {
+            res.code = 404;
+            res.write("File not found");
+        }
+        res.end();
+    });
 
 
     //set the port, set the app to run on multiple threads, and run the app
