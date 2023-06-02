@@ -54,18 +54,8 @@ CROW_ROUTE(app, "/submit")
 
                 // Send a response
                 registration(curData, username, password);
-                std::ifstream file("Frontend/birdpage.html");
-                if (file.is_open()) {
-                    std::stringstream buffer;
-                    buffer << file.rdbuf();
-                    file.close();
-
-                    res.set_header("Content-Type", "text/html");
-                    res.write(buffer.str());
-                } else {
-                    res.code = 404;
-                    res.write("File not found");
-                }
+                res.code = 302;
+                res.add_header("Location", "/");
                 res.end();
             });
     CROW_ROUTE(app, "/listPage.js")
@@ -140,6 +130,28 @@ CROW_ROUTE(app, "/submit")
                 }
                 res.end();
             });
+
+    CROW_ROUTE(app, "/register.html")([](const crow::request& req, crow::response& res){
+        std::ifstream file("Frontend/register.html");
+        if (file.is_open()) {
+            std::stringstream buffer;
+            buffer << file.rdbuf();
+            file.close();
+
+            res.set_header("Content-Type", "text/html");
+            res.write(buffer.str());
+        } else {
+            res.code = 404;
+            res.write("File not found");
+        }
+        res.end();
+    });
+
+    CROW_ROUTE(app, "/forgotpass.html")([]{
+        auto page = crow::mustache::load("forgotpass.html");
+        return page.render();
+    });
+
     CROW_ROUTE(app, "/<path>")
             ([](const crow::request& req, crow::response& res, const std::string& path) {
                 std::ifstream file(path);
@@ -176,25 +188,6 @@ CROW_ROUTE(app, "/submit")
                 res.end();
             });
 
-    CROW_ROUTE(app, "/forgotpass.html")([]{
-        auto page = crow::mustache::load("forgotpass.html");
-        return page.render();
-    });
-    CROW_ROUTE(app, "/register.html")([](const crow::request& req, crow::response& res){
-        std::ifstream file("Frontend/register.html");
-        if (file.is_open()) {
-            std::stringstream buffer;
-            buffer << file.rdbuf();
-            file.close();
-
-            res.set_header("Content-Type", "text/html");
-            res.write(buffer.str());
-        } else {
-            res.code = 404;
-            res.write("File not found");
-        }
-        res.end();
-    });
 
 
     //set the port, set the app to run on multiple threads, and run the app

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include "accountSystem.h"
+#include <cstring>;
 
 using namespace std;
 
