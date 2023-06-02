@@ -24,7 +24,7 @@ int main() {
 
     CROW_ROUTE(app, "/")([](const crow::request& req, crow::response& res){
         // Serve the HTML file
-        std::ifstream file("Frontend/listPage.html");
+        std::ifstream file("Frontend/homepage.html");
         if (file.is_open()) {
             std::stringstream buffer;
             buffer << file.rdbuf();
@@ -147,28 +147,58 @@ CROW_ROUTE(app, "/submit")
         res.end();
     });
 
-    CROW_ROUTE(app, "/forgotpass.html")([]{
-        auto page = crow::mustache::load("forgotpass.html");
-        return page.render();
+    CROW_ROUTE(app, "/forgotpass.html")([](const crow::request& req, crow::response& res){
+        std::ifstream file("Frontend/forgotpass.html");
+        if (file.is_open()) {
+            std::stringstream buffer;
+            buffer << file.rdbuf();
+            file.close();
+
+            res.set_header("Content-Type", "text/html");
+            res.write(buffer.str());
+        } else {
+            res.code = 404;
+            res.write("File not found");
+        }
+        res.end();
     });
 
     CROW_ROUTE(app, "/<path>")
             ([](const crow::request& req, crow::response& res, const std::string& path) {
+                std::string extension = path.substr(path.find_last_of(".") + 1);
+                std::string content_type;
+
                 std::ifstream file(path);
+                if (extension == "css") {
+                    content_type = "text/css";
+                } else if (extension == "js") {
+                    content_type = "application/javascript";
+                } else if (extension == "png") {
+                    content_type = "image/png";
+                } else if (extension == "jpg" || extension == "jpeg") {
+                    content_type = "image/jpeg";
+                } else if (extension == "html") {
+                    content_type = "text/html";
+                    file.open("Frontend/" + path);
+                }
+
+//                cout << path << endl;
                 if (file.is_open()) {
                     // Determine the content type based on the file extension
-                    std::string extension = path.substr(path.find_last_of(".") + 1);
-                    std::string content_type;
-
-                    if (extension == "css") {
-                        content_type = "text/css";
-                    } else if (extension == "js") {
-                        content_type = "application/javascript";
-                    } else if (extension == "png") {
-                        content_type = "image/png";
-                    } else if (extension == "jpg" || extension == "jpeg") {
-                        content_type = "image/jpeg";
-                    }
+//                    std::string extension = path.substr(path.find_last_of(".") + 1);
+//                    std::string content_type;
+//
+//                    if (extension == "css") {
+//                        content_type = "text/css";
+//                    } else if (extension == "js") {
+//                        content_type = "application/javascript";
+//                    } else if (extension == "png") {
+//                        content_type = "image/png";
+//                    } else if (extension == "jpg" || extension == "jpeg") {
+//                        content_type = "image/jpeg";
+//                    } else if (extension == "html") {
+//                        content_type = "text/html";
+//                    }
                     // Add more conditions for other file types if needed
 
                     // Set the appropriate response headers
@@ -180,7 +210,12 @@ CROW_ROUTE(app, "/submit")
                     file.close();
 
                     // Send the file contents as the response
-                    res.write(buffer.str());
+                    if(content_type != "text/html") {
+                        res.set_static_file_info(path);
+                    }
+                    else{
+                        res.write(buffer.str());
+                    }
                 } else {
                     res.code = 404;
                     res.write("File not found");

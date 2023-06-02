@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include "accountSystem.h"
-#include <cstring>;
+#include <cstring>
 
 using namespace std;
 
