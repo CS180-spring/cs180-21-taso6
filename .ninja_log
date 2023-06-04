@@ -1,0 +1,12 @@
+# ninja log v5
+19	737	7073872776125644	CMakeFiles/cs180_21_taso6.dir/backend/User.cpp.obj	c93d79f26ba5ebe3
+45	884	7073872777810067	CMakeFiles/cs180_21_taso6.dir/backend/bird_record.cpp.obj	1d9b5e0e631fd5c9
+35	950	7073872778469547	CMakeFiles/cs180_21_taso6.dir/backend/Initialize.cpp.obj	f457ba77611e301e
+2	1025	7073872779212140	CMakeFiles/cs180_21_taso6.dir/backend/collection.cpp.obj	b2d2ef6f2fd39199
+10	14943	7073872918064215	CMakeFiles/cs180_21_taso6.dir/main.cpp.obj	8ff32dbe3b9737b1
+31	823	7073872970562765	CMakeFiles/cs180_21_taso6.dir/UI/accountSystem.cpp.obj	f98971ef1ff11df
+826	17916	7073873141318908	cs180_21_taso6.exe	ccd74fcc5819eb0
+28	12770	7073875416238034	CMakeFiles/cs180_21_taso6.dir/main.cpp.obj	8ff32dbe3b9737b1
+12771	30380	7073875592491852	cs180_21_taso6.exe	ccd74fcc5819eb0
+30	12708	7073876461611006	CMakeFiles/cs180_21_taso6.dir/main.cpp.obj	8ff32dbe3b9737b1
+12709	29712	7073876631895542	cs180_21_taso6.exe	ccd74fcc5819eb0
