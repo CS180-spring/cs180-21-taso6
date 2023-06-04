@@ -38,14 +38,17 @@ Database::Database(){
         string password = parseCSV("assets/records.csv", "Password", i+1);
         string admin_level = parseCSV("assets/records.csv", "AdminLevel", i+1);
         User tempUser(username, password, stoi(admin_level, 0, 10));
-        cout << username << " " << password << " " << admin_level << endl;
+//        cout << username << " " << password << " " << admin_level << endl;
         users.push_back(tempUser);
     }
+//    cout << users.size() << endl;
 }
 
 bool Database::canLogin(string username, string password){
+   //cout << "we are in canLogin" << endl;
     for(int i=0; i<users.size(); i++){
-        if(users.at(i).userLogin(username, password)){
+     //   cout << i << endl;
+        if(users[i].userLogin(username, password)){
             return true;
         }
     }
@@ -53,9 +56,11 @@ bool Database::canLogin(string username, string password){
 }
 
 void Database::login(string username, string password){
+   // cout << "we are in Login" << endl;
     for(int i=0; i<users.size(); i++){
-        if(users.at(i).userLogin(username, password)){
-            currentUser = &users.at(i);
+     //   cout << i << endl;
+        if(users[i].userLogin(username, password)){
+            currentUser = &users[i];
             return;
         }
     }

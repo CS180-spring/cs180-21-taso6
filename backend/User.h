@@ -18,6 +18,8 @@ class User{
     User(User const &cpyuser);
     bool userLogin(string name, string password);
     vector<string> lastSightings();
+    string getUsername(){return username;}
+    string getPassword(){return password;}
 
 
 

@@ -8,5 +8,6 @@ void forgot();
 void registration(Database curData, string username, string password);
 void delete_file(Database curData);
 void create_file(Database curData);
+bool canLogin(Database curData, string username, string password);
 
 #endif

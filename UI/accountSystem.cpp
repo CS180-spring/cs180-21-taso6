@@ -122,3 +122,6 @@ void create_file(Database curData){
 */
     file.close();
 }
+bool canLogin(Database curData, string username, string password){
+   return curData.canLogin(username,password);
+}

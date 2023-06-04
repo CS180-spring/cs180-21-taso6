@@ -11,16 +11,10 @@
 using namespace std;
 
 int main() {
-//    Collection coll("assets/eBird_1k.csv", "e_Bird", "admin");
-//    userView();
-//    coll.load();
-//    coll.show();
     Database curData;
 
     crow::SimpleApp app; //define your crow application
     //crow::mustache::set_global_base("Frontend");
-
-
 
     CROW_ROUTE(app, "/")([](const crow::request& req, crow::response& res){
         // Serve the HTML file
@@ -57,21 +51,22 @@ int main() {
         res.add_header("Location", "/");
         res.end();
     });
-
     CROW_ROUTE(app, "/login")([&curData](crow::request& req, crow::response& res) {
-        string username = req.url_params.get("name");
+        string username = req.url_params.get("username");
         string password = req.url_params.get("password");
+        bool result = curData.canLogin(username,password);
 
-        if(curData.canLogin(username, password)){
-            curData.login(username, password);
-            res.code = 200;
+        if(result){
+            curData.login(username,password);
+            res.code = 302;
             res.add_header("Location", "/profile.html");
         }
         else{
-            res.code = 404;
+            res.code = 302;
             res.add_header("Location", "/login_frontend.html");
             //say can't log in somehow
         }
+        res.end();
     });
 
 
@@ -201,21 +196,7 @@ int main() {
 
 //                cout << path << endl;
                 if (file.is_open()) {
-                    // Determine the content type based on the file extension
-//                    std::string extension = path.substr(path.find_last_of(".") + 1);
-//                    std::string content_type;
-//
-//                    if (extension == "css") {
-//                        content_type = "text/css";
-//                    } else if (extension == "js") {
-//                        content_type = "application/javascript";
-//                    } else if (extension == "png") {
-//                        content_type = "image/png";
-//                    } else if (extension == "jpg" || extension == "jpeg") {
-//                        content_type = "image/jpeg";
-//                    } else if (extension == "html") {
-//                        content_type = "text/html";
-//                    }
+
                     // Add more conditions for other file types if needed
 
                     // Set the appropriate response headers
