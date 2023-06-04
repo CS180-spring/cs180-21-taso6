@@ -36,7 +36,7 @@ void registration(Database curData, string username, string password) {
     ofstream test;
     test.open("assets/records.csv", std::ios_base::app);
 
-//    cout << "Enter a Username" << endl;
+/*//    cout << "Enter a Username" << endl;
 //    cout << endl;
 //    cin >> username;
 ////    while(curData.left->lookUp(username) != ""){
@@ -45,7 +45,7 @@ void registration(Database curData, string username, string password) {
 ////    }
 //    cout << endl;
 //    cout << "Enter a Password" << endl;
-//    cin >> password;
+//    cin >> password;*/
 
     test << endl << username << "," << password << ",0";
     test.close();

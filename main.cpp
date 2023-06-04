@@ -15,7 +15,7 @@ int main() {
 //    userView();
 //    coll.load();
 //    coll.show();
-
+    Database curData;
 
     crow::SimpleApp app; //define your crow application
     //crow::mustache::set_global_base("Frontend");
@@ -40,24 +40,41 @@ int main() {
     });
 
 
-CROW_ROUTE(app, "/submit")
-            ([](const crow::request& req, crow::response& res) {
-                // Extract data from the submitted form
-                Database curData;
-                curData.readFile("assets/records.csv");
+    CROW_ROUTE(app, "/submit")([&curData](crow::request& req, crow::response& res) {
+        // Extract data from the submitted form
 
-                std::string username = req.url_params.get("name");
-                std::string password = req.url_params.get("password");
+//        curData.readFile("assets/records.csv");
 
-                // Process the extracted data
-                // ...
+        std::string username = req.url_params.get("name");
+        std::string password = req.url_params.get("password");
 
-                // Send a response
-                registration(curData, username, password);
-                res.code = 302;
-                res.add_header("Location", "/");
-                res.end();
-            });
+        // Process the extracted data
+        // ...
+
+        // Send a response
+        registration(curData, username, password);
+        res.code = 302;
+        res.add_header("Location", "/");
+        res.end();
+    });
+
+    CROW_ROUTE(app, "/login")([&curData](crow::request& req, crow::response& res) {
+        string username = req.url_params.get("name");
+        string password = req.url_params.get("password");
+
+        if(curData.canLogin(username, password)){
+            curData.login(username, password);
+            res.code = 200;
+            res.add_header("Location", "/profile.html");
+        }
+        else{
+            res.code = 404;
+            res.add_header("Location", "/login_frontend.html");
+            //say can't log in somehow
+        }
+    });
+
+
     CROW_ROUTE(app, "/listPage.js")
             ([](const crow::request& req, crow::response& res) {
                 std::string path= "Frontend/listPage.js";

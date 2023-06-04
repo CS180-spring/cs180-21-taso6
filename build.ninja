@@ -63,6 +63,13 @@ build CMakeFiles/cs180_21_taso6.dir/backend/Initialize.cpp.obj: CXX_COMPILER__cs
   OBJECT_DIR = CMakeFiles\cs180_21_taso6.dir
   OBJECT_FILE_DIR = CMakeFiles\cs180_21_taso6.dir\backend
 
+build CMakeFiles/cs180_21_taso6.dir/backend/parse.cpp.obj: CXX_COMPILER__cs180_21_taso6_Debug C$:/Users/Eddyt/CLionProjects/cs180-21-taso6/backend/parse.cpp || cmake_object_order_depends_target_cs180_21_taso6
+  DEP_FILE = CMakeFiles\cs180_21_taso6.dir\backend\parse.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++14
+  INCLUDES = -I"C:/Program Files (x86)/Boost/boost_1_82_0" -IC:/Users/Eddyt/CLionProjects/cs180-21-taso6/backend -IC:/Users/Eddyt/CLionProjects/cs180-21-taso6/UI
+  OBJECT_DIR = CMakeFiles\cs180_21_taso6.dir
+  OBJECT_FILE_DIR = CMakeFiles\cs180_21_taso6.dir\backend
+
 build CMakeFiles/cs180_21_taso6.dir/backend/User.cpp.obj: CXX_COMPILER__cs180_21_taso6_Debug C$:/Users/Eddyt/CLionProjects/cs180-21-taso6/backend/User.cpp || cmake_object_order_depends_target_cs180_21_taso6
   DEP_FILE = CMakeFiles\cs180_21_taso6.dir\backend\User.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++14
@@ -99,7 +106,7 @@ build CMakeFiles/cs180_21_taso6.dir/backend/bird_record.cpp.obj: CXX_COMPILER__c
 #############################################
 # Link the executable cs180_21_taso6.exe
 
-build cs180_21_taso6.exe: CXX_EXECUTABLE_LINKER__cs180_21_taso6_Debug CMakeFiles/cs180_21_taso6.dir/backend/collection.cpp.obj CMakeFiles/cs180_21_taso6.dir/backend/Initialize.cpp.obj CMakeFiles/cs180_21_taso6.dir/backend/User.cpp.obj CMakeFiles/cs180_21_taso6.dir/UI/accountSystem.cpp.obj CMakeFiles/cs180_21_taso6.dir/main.cpp.obj CMakeFiles/cs180_21_taso6.dir/backend/bird_record.cpp.obj
+build cs180_21_taso6.exe: CXX_EXECUTABLE_LINKER__cs180_21_taso6_Debug CMakeFiles/cs180_21_taso6.dir/backend/collection.cpp.obj CMakeFiles/cs180_21_taso6.dir/backend/Initialize.cpp.obj CMakeFiles/cs180_21_taso6.dir/backend/parse.cpp.obj CMakeFiles/cs180_21_taso6.dir/backend/User.cpp.obj CMakeFiles/cs180_21_taso6.dir/UI/accountSystem.cpp.obj CMakeFiles/cs180_21_taso6.dir/main.cpp.obj CMakeFiles/cs180_21_taso6.dir/backend/bird_record.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lws2_32  -lwsock32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\cs180_21_taso6.dir

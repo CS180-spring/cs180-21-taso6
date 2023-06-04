@@ -10,12 +10,15 @@ class Database{
 private:
     vector<Collection> collections;
     vector<User> users;
+    User* currentUser = nullptr;
 public:
-    Database(){}
+    Database();
     void deleteFile();
     void readFile(string file);
     void createCollection(string fileName, string name, string username);
-    void parseAllCSV();
+    void addCollection(Collection collection);
+    bool canLogin(string username, string password);
+    void login(string username, string password);
 };
 
 #endif
