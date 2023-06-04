@@ -65,3 +65,16 @@ void Database::login(string username, string password){
         }
     }
 }
+
+void Database::logout() {
+    if(currentUser != nullptr){
+        currentUser = nullptr;
+    }
+}
+
+bool Database::isLoggedIn(){
+    if(currentUser == nullptr){
+        return false;
+    }
+    return true;
+}

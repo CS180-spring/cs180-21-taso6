@@ -19,6 +19,8 @@ public:
     void addCollection(Collection collection);
     bool canLogin(string username, string password);
     void login(string username, string password);
+    void logout();
+    bool isLoggedIn();
 };
 
 #endif

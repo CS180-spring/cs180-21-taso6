@@ -52,20 +52,38 @@ int main() {
         res.end();
     });
     CROW_ROUTE(app, "/login")([&curData](crow::request& req, crow::response& res) {
-        string username = req.url_params.get("username");
-        string password = req.url_params.get("password");
-        bool result = curData.canLogin(username,password);
+        if(!curData.isLoggedIn()){
+            //not logged in
+            string username = req.url_params.get("username");
+            string password = req.url_params.get("password");
+            bool result = curData.canLogin(username,password);
 
-        if(result){
-            curData.login(username,password);
+            if(result){
+                //upon login, redirect to profile
+                curData.login(username,password);
+                res.code = 302;
+                res.add_header("Location", "/profile.html");
+            }
+            else{
+                //cannot login because username/password wrong
+                res.code = 302;
+                res.add_header("Location", "/login_frontend.html");
+                //say can't log in somehow
+            }
+        }
+        else{
+            //already logged in, redirects to profile page
+            //this shouldn't be accessible unless they type the link in manually
             res.code = 302;
             res.add_header("Location", "/profile.html");
         }
-        else{
-            res.code = 302;
-            res.add_header("Location", "/login_frontend.html");
-            //say can't log in somehow
-        }
+        res.end();
+    });
+
+    CROW_ROUTE(app, "/logout")([&curData](crow::request& req, crow::response& res) {
+        curData.logout();
+        res.code = 302;
+        res.add_header("Location", "/homepage.html");
         res.end();
     });
 
