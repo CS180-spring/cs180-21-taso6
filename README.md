@@ -9,21 +9,42 @@ BirbyDB is an online database platform  designated to sharing and discovering bi
 * Eddy Tat (etat002@ucr.edu)
 * Anjali Daryani (adary001@ucr.edu)
 
-**Choice of interface:** Webpage Interface**
+**Choice of interface:** Webpage Interface
 
 ## Interface Documentation
-* account_create - initiates account creation process
-* show_records {flag} - shows 50 records of birds at a time
-* next_page - shows the next page of records
-* prev_page - shows the previous page of records
-* 
+* Bird_Record:
+- Stores information about birds
+- CRUD operations
+- Essentially a struct
+* Collection:
+- Stores bird_records
+- Linked to users
+- Search and sorting functions
+- Can be seen by other users
+- Can add bird_records from other collections to theirs
+* Users
+- Stores information about users
+- Collections are linked by users
+- Multi-leveled admin privileges
+- Regular_user and Admin_user inherit from this class
+* Databases
+- Class that interacts with the data
+- Stores all the data
+- Login functionality
+- Is used with crow to communicate between frontend and backend
 
-**Programming language(s):** C++
+**Programming language(s):** C++, HTML/CSS
 
 **High-level description:**
 
+
 **Feasibility study:**
+It is feasible, but with our current skills, we are entirly learning new technologies and packagesas. We anticipated challenges but are committed to acquiring the necessary skills to successfully implement the platform.
 
 **Initial list of features:**
+* Observation Sharing: Allows users to share their bird observations with a community of fellow enthusiasts, fostering knowledge exchange and collaboration.
+* Uploading contributions: Empowers users to contribute to the database by uploading their own bird observations, enriching the collective knowledge base.
+* Sorting, Viewing, and Editing Collective DB: Users can easily sort, view, and edit bird observations based on various criteria, such as species, location, and time.
+* Personalized lists: Enables users to curate personalized lists of observations, facilitating the management of favorite birds and desired sightings.
 
-**Database documentation:** Being worked on
+**Database Documentation:** 
