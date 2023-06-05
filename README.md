@@ -51,5 +51,3 @@
 > * Uploading contributions: Empowers users to contribute to the database by uploading their own bird observations, enriching the collective knowledge base.
 > * Sorting, Viewing, and Editing Collective DB: Users can easily sort, view, and edit bird observations based on various criteria, such as species, location, and time.
 > * Personalized lists: Enables users to curate personalized lists of observations, facilitating the management of favorite birds and desired sightings.
-
-> ### **Database Documentation:** 
