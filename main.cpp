@@ -33,7 +33,7 @@ int main() {
         res.end();
     });
 
-    CROW_ROUTE(app, "/homepage.html")([](const crow::request& req, crow::response& res){
+    /*CROW_ROUTE(app, "/homepage.html")([](const crow::request& req, crow::response& res){
         // Serve the HTML file
         std::ifstream file("Frontend/homepage.html");
         if (file.is_open()) {
@@ -48,7 +48,7 @@ int main() {
             res.write("File not found");
         }
         res.end();
-    });
+    });*/
 
 
     CROW_ROUTE(app, "/login_frontend.html")([&curData](const crow::request& req, crow::response& res){
@@ -126,80 +126,6 @@ int main() {
         res.add_header("Location", "/homepage.html");
         res.end();
     });
-
-
-    CROW_ROUTE(app, "/listPage.js")
-            ([](const crow::request& req, crow::response& res) {
-                std::string path= "Frontend/listPage.js";
-                std::ifstream file(path);
-                if (file.is_open()) {
-                    // Determine the content type based on the file extension
-                    std::string extension = path.substr(path.find_last_of(".") + 1);
-                    std::string content_type;
-
-                    if (extension == "css") {
-                        content_type = "text/css";
-                    } else if (extension == "js") {
-                        content_type = "text/javascript";
-                    } else if (extension == "png") {
-                        content_type = "image/png";
-                    } else if (extension == "jpg" || extension == "jpeg") {
-                        content_type = "image/jpeg";
-                    }
-                    // Add more conditions for other file types if needed
-
-                    // Set the appropriate response headers
-                    res.set_header("Content-Type", content_type);
-
-                    // Read the file contents into a string
-                    std::stringstream buffer;
-                    buffer << file.rdbuf();
-                    file.close();
-
-                    // Send the file contents as the response
-                    res.write(buffer.str());
-                } else {
-                    res.code = 404;
-                    res.write("File not found");
-                }
-                res.end();
-            });
-    CROW_ROUTE(app, "/listPage.css")
-            ([](const crow::request& req, crow::response& res) {
-                std::string path= "Frontend/listPage.css";
-                std::ifstream file(path);
-                if (file.is_open()) {
-                    // Determine the content type based on the file extension
-                    std::string extension = path.substr(path.find_last_of(".") + 1);
-                    std::string content_type;
-
-                    if (extension == "css") {
-                        content_type = "text/css";
-                    } else if (extension == "js") {
-                        content_type = "text/javascript";
-                    } else if (extension == "png") {
-                        content_type = "image/png";
-                    } else if (extension == "jpg" || extension == "jpeg") {
-                        content_type = "image/jpeg";
-                    }
-                    // Add more conditions for other file types if needed
-
-                    // Set the appropriate response headers
-                    res.set_header("Content-Type", content_type);
-
-                    // Read the file contents into a string
-                    std::stringstream buffer;
-                    buffer << file.rdbuf();
-                    file.close();
-
-                    // Send the file contents as the response
-                    res.write(buffer.str());
-                } else {
-                    res.code = 404;
-                    res.write("File not found");
-                }
-                res.end();
-            });
 
     CROW_ROUTE(app, "/register.html")([](const crow::request& req, crow::response& res){
         std::ifstream file("Frontend/register.html");
