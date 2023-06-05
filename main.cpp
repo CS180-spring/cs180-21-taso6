@@ -33,6 +33,46 @@ int main() {
         res.end();
     });
 
+    CROW_ROUTE(app, "/homepage.html")([](const crow::request& req, crow::response& res){
+        // Serve the HTML file
+        std::ifstream file("Frontend/homepage.html");
+        if (file.is_open()) {
+            std::stringstream buffer;
+            buffer << file.rdbuf();
+            file.close();
+
+            res.set_header("Content-Type", "text/html");
+            res.write(buffer.str());
+        } else {
+            res.code = 404;
+            res.write("File not found");
+        }
+        res.end();
+    });
+
+
+    CROW_ROUTE(app, "/login_frontend.html")([&curData](const crow::request& req, crow::response& res){
+        // Serve the HTML file
+        std::ifstream file;
+        if(curData.isLoggedIn()){
+            file.open("Frontend/profile.html");
+        }
+        else {
+            file.open("Frontend/login_frontend.html");
+        }
+        if (file.is_open()) {
+            std::stringstream buffer;
+            buffer << file.rdbuf();
+            file.close();
+
+            res.set_header("Content-Type", "text/html");
+            res.write(buffer.str());
+        } else {
+            res.code = 404;
+            res.write("File not found");
+        }
+        res.end();
+    });
 
     CROW_ROUTE(app, "/submit")([&curData](crow::request& req, crow::response& res) {
         // Extract data from the submitted form

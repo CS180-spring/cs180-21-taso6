@@ -10,7 +10,7 @@ class Database{
 private:
     vector<Collection> collections;
     vector<User> users;
-    User* currentUser;
+    User* currentUser = nullptr;
 public:
     Database();
     void deleteFile();
