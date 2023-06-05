@@ -1,9 +1,8 @@
 {
     "files.associations": {
-        "iostream": "cpp",
-        "ostream": "cpp",
         "iosfwd": "cpp",
-        "vector": "cpp"
+        "istream": "cpp",
+        "ostream": "cpp",
     },
     "liveServer.settings.port": 5501
 }

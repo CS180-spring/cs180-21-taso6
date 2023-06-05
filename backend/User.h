@@ -9,20 +9,18 @@ using namespace std;
 
 class User{
     private:
-
     string username;
     string password;
     int admin_level;
-    vector<User> users;
 
     public:
-    void createInstance(string name, string password);
-    void userLogin(string name, string password);
-    void createList(string name);
+    User(string username, string password, int admin_level);
+    User(User const &cpyuser);
+    bool userLogin(string name, string password);
     vector<string> lastSightings();
-//    void editData(Collection collection, bird_Record record);
-//    void viewLists();
-//    void getList(string name);
+    string getUsername(){return username;}
+    string getPassword(){return password;}
+
 
 
 };

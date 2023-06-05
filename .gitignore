@@ -1,0 +1,12 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+cmake-build-debug/*
+.idea
+cmake-build-debug/CMakeFiles/cs180_21_taso6.dir/main.cpp.o
+CMakeLists.txt
+.cmake
+CMakeFiles/
+cs180_21_taso6
+cmake_install.cmake

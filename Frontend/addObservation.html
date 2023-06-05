@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="listPage.css">
+        <script src="listPage.js"></script>
+        <style>
+            button {
+                background-color: #4CAF50;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body style="height: 1100px;">
+        <nav id = "header" role = "navigation">
+
+            <br/>
+            <a href = "homepage.html" class = "home"><button>Home</button></a>
+            <a href = "listPage.html" class = "database"><button style="background-color: rgb(255, 165, 0);">Database</button ></a>
+            <a href = "profile.html" class = "profile"><button>Profile</button></a>
+            <a href = "#loginpage" class = "logoutPage"><button style="background-color: rgb(77, 74, 74);">Logout</button></a>
+            <!-- <a href = "#content-center" class = "skip">prev page</a> -->
+            <div id = "logo">
+                <img id = "logo" src = "images/purple_bird.png" alt = "image of the weird purple bird; Birby logo">
+            </div>
+            <div id = "logoText">
+                BirbyDB
+            </div>
+        </nav>
+        <main role="main">
+            <div class="container">
+                <img class="profile-img" src="images/birb.png">
+                <h1>New Berb Observation</h1>
+                <form>
+                    <label for="name">Common Name:</label>
+                    <input type="text" name="name">
+                    <label for="name">Scientific Name:</label>
+                    <input type="text" name="name" placeholder="optional" style="font-style: italic;">
+                    <label for="name">X Coordinates:</label>
+                    <input type="text" name="name" placeholder="optional" style="font-style: italic;">
+                    <label for="name">Y Coordinates:</label>
+                    <input type="text" name="name" placeholder="optional" style="font-style: italic;">
+                    <label for="name">State:</label>
+                    <input type="text" name="name">
+                    <label for="name">County:</label>
+                    <input type="text" name="name">
+                    <label for="name">Locality:</label>
+                    <input type="text" name="name" placeholder="optional" style="font-style: italic;">
+                    <label for="name">Observation Date (YYYY-MM-DD):</label>
+                    <input type="text" name="name">
+                    <label for="name">Birby Username:</label>
+                    <input type="text" name="username">
+                    <br>
+                    <input type="submit" style="margin-top:5%;margin-left:90%;background-color: #4CAF50;
+                    color: #fff;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;">
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
