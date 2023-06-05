@@ -1,28 +1,17 @@
 # ninja log v5
-95	1843	7075777577203765	CMakeFiles/cs180_21_taso6.dir/backend/User.cpp.obj	7db66307bb5954b2
-38	6042	7076272939539855	CMakeFiles/cs180_21_taso6.dir/backend/Initialize.cpp.obj	e9e05d4b20820f46
-2420	3684	7073854758004800	CMakeFiles/cs180_21_taso6.dir/backend/bird_record.cpp.obj	9d47471e0d709e5f
-256	5974	7075589295618123	CMakeFiles/cs180_21_taso6.dir/backend/collection.cpp.obj	a1a35c9edc0419ee
-48	5445	7076272933266816	CMakeFiles/cs180_21_taso6.dir/UI/accountSystem.cpp.obj	7ba7140b37acbee
-19956	69968	7076275365290235	cs180_21_taso6.exe	7b41b62768ee7140
-38	19955	7076274865094879	CMakeFiles/cs180_21_taso6.dir/main.cpp.obj	7642271e6aa006aa
-174	2507	7075610584150294	CMakeFiles/cs180_21_taso6.dir/backend/parse.cpp.obj	49349a28324f999
-<<<<<<< HEAD
-46	634	7076575927249992	CMakeFiles/cs180_21_taso6.dir/backend/User.cpp.obj	b5f7f3fca2e3c356
-53	790	7076575928765191	CMakeFiles/cs180_21_taso6.dir/UI/accountSystem.cpp.obj	cab1b65d05e429ab
-32	799	7076575928897051	CMakeFiles/cs180_21_taso6.dir/backend/collection.cpp.obj	a5187b354abbe075
-39	891	7076575929785784	CMakeFiles/cs180_21_taso6.dir/backend/parse.cpp.obj	841893cae4f27b39
-23	929	7076575930207551	CMakeFiles/cs180_21_taso6.dir/backend/Initialize.cpp.obj	c114fe88ae12fa9
-635	1224	7076575933163100	CMakeFiles/cs180_21_taso6.dir/backend/bird_record.cpp.obj	bd56ec3bf39de3a1
-60	11986	7076576040522076	CMakeFiles/cs180_21_taso6.dir/main.cpp.obj	9dcbd4ded125c57
-11986	25958	7076576180362231	cs180_21_taso6.exe	7b41b62768ee7140
-=======
 55	778	7076581886049504	CMakeFiles/cs180_21_taso6.dir/backend/User.cpp.obj	b5f7f3fca2e3c356
-40	826	7076581886538552	CMakeFiles/cs180_21_taso6.dir/UI/accountSystem.cpp.obj	cab1b65d05e429ab
-34	954	7076581887636432	CMakeFiles/cs180_21_taso6.dir/backend/collection.cpp.obj	a5187b354abbe075
-47	1011	7076581888466738	CMakeFiles/cs180_21_taso6.dir/backend/parse.cpp.obj	841893cae4f27b39
 26	1033	7076581888686288	CMakeFiles/cs180_21_taso6.dir/backend/Initialize.cpp.obj	c114fe88ae12fa9
 779	1439	7076581892723890	CMakeFiles/cs180_21_taso6.dir/backend/bird_record.cpp.obj	bd56ec3bf39de3a1
-62	12103	7076581999143537	CMakeFiles/cs180_21_taso6.dir/main.cpp.obj	9dcbd4ded125c57
+34	954	7076581887636432	CMakeFiles/cs180_21_taso6.dir/backend/collection.cpp.obj	a5187b354abbe075
+40	826	7076581886538552	CMakeFiles/cs180_21_taso6.dir/UI/accountSystem.cpp.obj	cab1b65d05e429ab
 12104	26090	7076582139142216	cs180_21_taso6.exe	7b41b62768ee7140
->>>>>>> 06cf8908361e0ef1a238d72d39441b3107f30105
+62	12103	7076581999143537	CMakeFiles/cs180_21_taso6.dir/main.cpp.obj	9dcbd4ded125c57
+47	1011	7076581888466738	CMakeFiles/cs180_21_taso6.dir/backend/parse.cpp.obj	841893cae4f27b39
+55	633	7076619730184348	CMakeFiles/cs180_21_taso6.dir/backend/User.cpp.obj	b5f7f3fca2e3c356
+63	739	7076619731173335	CMakeFiles/cs180_21_taso6.dir/UI/accountSystem.cpp.obj	cab1b65d05e429ab
+73	791	7076619731720905	CMakeFiles/cs180_21_taso6.dir/backend/bird_record.cpp.obj	bd56ec3bf39de3a1
+39	798	7076619731757700	CMakeFiles/cs180_21_taso6.dir/backend/collection.cpp.obj	a5187b354abbe075
+46	845	7076619732272883	CMakeFiles/cs180_21_taso6.dir/backend/parse.cpp.obj	841893cae4f27b39
+33	890	7076619732751761	CMakeFiles/cs180_21_taso6.dir/backend/Initialize.cpp.obj	c114fe88ae12fa9
+634	12442	7076619848012727	CMakeFiles/cs180_21_taso6.dir/main.cpp.obj	9dcbd4ded125c57
+12443	26176	7076619985502733	cs180_21_taso6.exe	7b41b62768ee7140
