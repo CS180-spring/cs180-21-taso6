@@ -1,3 +1,3 @@
-C:/Users/Eddyt/CLionProjects/cs180-21-taso6/CMakeFiles/cs180_21_taso6.dir
-C:/Users/Eddyt/CLionProjects/cs180-21-taso6/CMakeFiles/edit_cache.dir
-C:/Users/Eddyt/CLionProjects/cs180-21-taso6/CMakeFiles/rebuild_cache.dir
+C:/Users/bvcha/Desktop/BirbyDB/cs180-21-taso6-5/CMakeFiles/cs180_21_taso6.dir
+C:/Users/bvcha/Desktop/BirbyDB/cs180-21-taso6-5/CMakeFiles/edit_cache.dir
+C:/Users/bvcha/Desktop/BirbyDB/cs180-21-taso6-5/CMakeFiles/rebuild_cache.dir
