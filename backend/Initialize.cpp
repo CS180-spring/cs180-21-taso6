@@ -50,7 +50,7 @@ Database::Database(){
 //        string fileName =
 //        createCollection(entry, )
 //    }
-    createCollection("assets/admin-eBird_1k.csv", "eBird_1k", "admin");
+    createCollection("assets/admin-eBird_1k.csv", "eBird_1k.csv", "admin");
 }
 
 bool Database::canLogin(string username, string password){
@@ -93,9 +93,11 @@ string Database::getCollectionName(int index) {
 }
 
 Collection Database::getCollection(string collectionName, string username) {
+//    cout << "In GetCollection: " << collectionName << " | " << username << endl;
     for(int i=0; i<collections.size(); i++){
         if(collections[i].getCollectionName() == collectionName && collections[i].getUsername() == username){
             return collections[i];
         }
     }
+    return collections[0];
 }

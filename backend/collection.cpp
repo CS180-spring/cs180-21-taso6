@@ -2,7 +2,7 @@
 #include <iostream>
 
 Collection::Collection(string fName, string name, string uName){
-    std::cout << "STUFF: " << fileName << ", " << name << ", " << username << std::endl;
+    std::cout << "STUFF: " << fName << ", " << name << ", " << uName << std::endl;
     fileName = fName;
     collectionName = name;
     username = uName;

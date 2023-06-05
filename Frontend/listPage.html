@@ -2,41 +2,23 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" type="text/css" href="../../Frontend/listPage.css">
-        <input type="file" name="eBird_1k_cleaned.csv" id="file" accept=".csv" > <br><br>
-        <input type="button" id="btnsubmit" value="Submit" onclick="readCSVFile(1);" >
         <!-- <input type="file" id="fileInput">
         <button id="loadButton">Load CSV</button> -->
 
 <!--        <script src="../..//Frontend/listPage.js"></script>-->
         <style>
-            button {
-                background-color: #4CAF50;
-                color: #fff;
-                padding: 10px 20px;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-            }
+
         </style>
     </head>
     <body style="height: 1100px;">
         <nav id = "header" role = "navigation">
 
 
-    <script src="../Frontend/listPage.js"></script>
-    <style>
-        button {
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-    </style>
+    <script src="../../Frontend/listPage.js"></script>
 </head>
 <body style="height: 1100px;">
     <nav id = "header" role = "navigation">
+
         <br/>
         <a href = "homepage.html" class = "home"><button>Home</button></a>
         <a href = "listPage.html" class = "database"><button style="background-color: rgb(255, 165, 0);">Database</button ></a>
@@ -44,21 +26,12 @@
         <a href = "#loginpage" class = "logoutPage"><button style="background-color: rgb(77, 74, 74);">Logout</button></a>
         <!-- <a href = "#content-center" class = "skip">prev page</a> -->
         <div id = "logo">
-            <img id = "logo" src = "../Frontend/images/purple_bird.png" alt = "image of the weird purple bird; Birby logo">
+            <img id = "logo" src = "../../Frontend/images/purple_bird.png" alt = "image of the weird purple bird; Birby logo">
         </div>
         <div id = "logoText">
             BirbyDB
         </div>
     </nav>
-    <main role="main">
-        <div class="data">
-            <div id = 'pageNumberText'>
-                <!-- Birby Database -->
-            </div>
-            <div id = "logoText">
-                BirbyDB
-            </div>
-        </nav>
         <main role="main">
             <div class="data">
                 <div id = 'pageNumberText'>
@@ -72,11 +45,10 @@
                             <th>Common Name</th>
                             <th>Locality</th>
                             <th>Observation Date</th>
-                            <th>User ID</th>
                         </tr>
                     </thead>
                     <tbody>
-                        Pageinfo
+                        {{Pageinfo}}
                     </tbody>
                 </table>
             </div>

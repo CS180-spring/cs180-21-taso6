@@ -167,11 +167,15 @@ int main() {
         std::stringstream buffer;
         std::ifstream file("Frontend/listPage.html");
         if (file.is_open()) {
+
+
+
+
             buffer << file.rdbuf();
             file.close();
 
             res.set_header("Content-Type", "text/html");
-            res.write(buffer.str());
+//            res.write(buffer.str());
         } else {
             res.code = 404;
             res.write("File not found\n NOOOOOOOOOOOOO");
@@ -192,18 +196,22 @@ int main() {
         Collection test(curData.getCollection(colName , uName));
         string tableStuff;
         int thingy = curData.getCollection(colName , uName).size();
-        for(int i = 0; i < curData.getCollection(colName , uName).size(); i++){
+        for(int i = 0; i < /*curData.getCollection(colName , uName).size()*/10; i++){
             bird_record tempBird = curData.getCollection(colName , uName).getBird(i);
-            tableStuff += "<div>" + tempBird.getCommonName() + tempBird.getLocality() + tempBird.getObservationDate() + "</div>\n" ;
+            tableStuff += "<tr>";
+            tableStuff += "<td>" + tempBird.getCommonName() + "</td>";
+            tableStuff += "<td>" + tempBird.getLocality() + "</td>";
+            tableStuff += "<td>" + tempBird.getObservationDate() + "</td>";
+            tableStuff += "</tr>";
         }
 
-        placeholder = "PageInfo";
+        placeholder = "{{Pageinfo}}";
         pos = temp.find(placeholder);
         if(pos != string::npos){
             temp.replace(pos, placeholder.length(), tableStuff);
         }
 
-
+        res.write(temp);
         res.end();
     });
 
