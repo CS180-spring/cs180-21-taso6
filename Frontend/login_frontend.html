@@ -6,8 +6,10 @@
     body {
       font-family: Arial, sans-serif;
       background-color: #F8F8F8;
+      margin: 0;
+      padding: 0;
     }
-    .container {
+    .container { 
       width: 300px;
       margin: 0 auto;
       padding: 20px;
@@ -20,7 +22,7 @@
     .container h1 {
       font-size: 32px;
       margin-bottom: 10px;
-      color: thistle;
+      color: black;
     }
     .container p {
       font-size: 18px;
@@ -61,17 +63,94 @@
       color: #bb8fbb;
       text-decoration: none;
     }
-  
+    /* Header styles */
+    nav {
+      background-color: rgba(20, 87, 255, 0.124);
+      padding-bottom: 5%;
+      position: relative;
+    }
+    .logoutPage {
+      position: absolute;
+      left: 90%;
+    }
+    .profile {
+      position: absolute;
+      margin-left: 18%;
+    }
+    .database {
+      position: absolute;
+      margin-left: 10%;
+    }
+    .home {
+      position: absolute;
+      margin-left: 3%;
+    }
+    #logo {
+      position: absolute;
+      left: 48%;
+      width: 100px;
+    }
+    #logoText {
+      text-align: center;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: bold;
+      font-size: 75px;
+      padding-top: 70px;
+    }
+  button {
+      background-color: #4CAF50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #3e8e41;
+    }
+    ul {
+        list-style: none;
+    }
+    li {
+        margin-bottom: 10px;
+    }
+    .logoutPage {
+        position: absolute;
+        left: 90%;
+    }
+
+    .database {
+        position: absolute;
+        margin-left: 10%;
+    }
+    .home {
+        position: absolute;
+        margin-left: 3%;
+    }
+    .profile{
+        position: absolute;
+        margin-left: 18%;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="../Frontend/images/logo.png" alt="BirbyDB Logo">
-    <p>For all of your birby needs.</p>
-  </div>
+  <nav id="header" role="navigation">
+    <br/>
+    <a href="homepage.html" class="home"><button>Home</button></a>
+    <a href="listPage.html" class="database"><button>Database</button></a>
+    <a href="profile.html" class="profile"><button>Profile</button></a>
+    <a href="login_frontend.html" class="logoutPage"><button style="background-color: rgb(77, 74, 74);">Logout</button></a>
+    <div id="logo">
+      <img id="logo" src="images/purple_bird.png" alt="image of the weird purple bird; Birby logo"> 
+    </div>
+    <div id="logoText">
+      BirbyDB
+    </div>
+  </nav>
   <div class="form-container">
     <div class="container">
-      <form action="/login" method="get">
+      <h1 style="text-align: center;">Login</h1>
+      <form>
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required>
 
@@ -83,8 +162,6 @@
       <div class="register">
         <p>Don't have an account? <a href="Frontend/register.html">Register</a></p>
       </div>
-      <div class=""forgot password">
-      <p><a href="Frontend/forgotpass.html">Forgot password?</a></p>
     </div>
   </div>
 </body>
