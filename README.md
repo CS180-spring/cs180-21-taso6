@@ -12,22 +12,22 @@ BirbyDB is an online database platform  designated to sharing and discovering bi
 **Choice of interface:** Webpage Interface
 
 **Interface Documentation**
-Bird_Record:
+*Bird_Record:
 - Stores information about birds
 - CRUD operations
 - Essentially a struct
-Collection:
+*Collection:
 - Stores bird_records
 - Linked to users
 - Search and sorting functions
 - Can be seen by other users
 - Can add bird_records from other collections to theirs
-Users
+*Users
 - Stores information about users
 - Collections are linked by users
 - Multi-leveled admin privileges
 - Regular_user and Admin_user inherit from this class
-Databases
+*Databases
 - Class that interacts with the data
 - Stores all the data
 - Login functionality
@@ -36,7 +36,7 @@ Databases
 **Programming language(s):** C++, HTML/CSS
 
 **High-level description:**
-
+The BirbyDB database platform is designed to facilitate the sharing and discovery of bird observations in California. It offers a web-based interface for users to interact with various database entities, such as Bird_Record, Collection, and Users. The platform supports CRUD operations for bird records and provides functionalities for searching, sorting, and editing the collective database. Users can create personalized collections of bird observations, and these collections can be viewed by other users. The system also includes user management features, including multi-leveled admin privileges. The programming languages used for implementation are C++ for the backend and HTML/CSS for the webpage interface, using Crow to communicate between the frontend and backend.
 
 **Feasibility study:**
 It is feasible, but with our current skills, we are entirly learning new technologies and packagesas. We anticipated challenges but are committed to acquiring the necessary skills to successfully implement the platform.
