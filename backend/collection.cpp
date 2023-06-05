@@ -1,5 +1,4 @@
 #include "collection.h"
-#include "parse.h"
 
 Collection::Collection(string fileName, string name, string username){
     this->fileName = fileName;
