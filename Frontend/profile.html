@@ -158,9 +158,7 @@
 
         <h2>My Lists</h2>
         <ul id="button-list">
-            <li><a href = "birdpage.html"><button>My List</button></a></li>
-            <li><button>Wish List</button></li>
-            <li><button>Derrek's List</button></li>
+            <li><a href = "profilelist.html"><button>My List</button></a></li>
         </ul>
 
         <form id="add-button-form">
@@ -168,35 +166,42 @@
             <input type="text" id="button-text" required>
             <button type="submit">Add Button</button>
         </form>
-        
 
         <script>
             document.getElementById('add-button-form').addEventListener('submit', function (event) {
-              event.preventDefault(); // prevent form submission
-        
-              var buttonText = document.getElementById('button-text').value;
-              var buttonList = document.getElementById('button-list');
-        
-              // Create a new list item
-              var li = document.createElement('li');
-              var button = document.createElement('button');
-              button.textContent = buttonText;
-        
-              var removeButton = document.createElement('smallbutton');
-              removeButton.textContent = 'X';
-              removeButton.addEventListener('click', function() {
-                buttonList.removeChild(li);
-              });
-        
-              li.appendChild(button);
-              li.appendChild(removeButton);
-        
-              buttonList.appendChild(li);
-        
-              // Clear the input field
-              document.getElementById('button-text').value = '';
+                event.preventDefault(); // prevent form submission
+
+                var buttonText = document.getElementById('button-text').value;
+                var buttonList = document.getElementById('button-list');
+
+                // Create a new list item
+                var li = document.createElement('li');
+                var button = document.createElement('button');
+                button.textContent = buttonText;
+
+                var link = "profilelist.html";
+
+                button.addEventListener('click', function() {
+                    window.location.href = link;
+                });
+
+                var removeButton = document.createElement('smallbutton');
+                removeButton.textContent = 'X';
+                removeButton.addEventListener('click', function() {
+                    buttonList.removeChild(li);
+                });
+
+                li.appendChild(button);
+                li.appendChild(removeButton);
+
+                buttonList.appendChild(li);
+
+                // Clear the input field
+                document.getElementById('button-text').value = '';
             });
-          </script>
+        </script>
+
+
         </ul>
     </div>
     </body>
