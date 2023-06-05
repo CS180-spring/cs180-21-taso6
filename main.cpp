@@ -196,8 +196,8 @@ int main() {
         Collection test(curData.getCollection(colName , uName));
         string tableStuff;
         int thingy = curData.getCollection(colName , uName).size();
-        for(int i = 0; i < /*curData.getCollection(colName , uName).size()*/10; i++){
-            bird_record tempBird = curData.getCollection(colName , uName).getBird(i);
+        for(int i = 0; i < 10; i++){
+            bird_record tempBird = curData.getCollection(colName , uName).getBird((pageNumber-1)*10 + i);
             tableStuff += "<tr>";
             tableStuff += "<td>" + tempBird.getCommonName() + "</td>";
             tableStuff += "<td>" + tempBird.getLocality() + "</td>";
@@ -215,12 +215,32 @@ int main() {
         res.end();
     });
 
-    CROW_ROUTE(app, "/listPage.html/<string>/<int>/prevPage")([&curData](const crow::request& req, crow::response& res, const std::string file_name, int pageNumber ){
+    CROW_ROUTE(app, "/listPage.html/<string>/<int>/prevPage")([&curData](const crow::request& req, crow::response& res, const std::string file_name, const int &pageNumber ){
         //this is the file name of the csv in the url
         res.code = 302;
-        res.add_header("Location", "/listPage.html/<string>/" + to_string(pageNumber--));
+        //res.write(to_string(pageNumber));
+        int prevVal;
+        if(pageNumber > 1){
+            prevVal= pageNumber-1;
+        }
+        res.add_header("Location", "/listPage.html/" + file_name + "/" + to_string(prevVal));
         res.end();
     });
+
+    CROW_ROUTE(app, "/listPage.html/<string>/<int>/nextPage")([&curData](const crow::request& req, crow::response& res, const std::string file_name, const int &pageNumber ){
+        //this is the file name of the csv in the url
+        std::string csvName = "assets/" + file_name;
+        string colName = csvName.substr(csvName.find("-") + 1);
+        string uName = csvName.substr(csvName.find('/') +1, csvName.find("-") - csvName.find('/')-1 );
+        res.code = 302;
+        int nextVal;
+        if(pageNumber < (curData.getCollection(colName , uName).size()/10)){
+            nextVal = pageNumber+1;
+        }
+        res.add_header("Location", "/listPage.html/" + file_name + "/" + to_string(nextVal));
+        res.end();
+    });
+
     CROW_ROUTE(app, "/<path>")
             ([](const crow::request& req, crow::response& res, const std::string& path) {
                 std::string extension = path.substr(path.find_last_of(".") + 1);

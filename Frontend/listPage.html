@@ -20,12 +20,12 @@
     <nav id = "header" role = "navigation">
 
         <br/>
-        <a href = "homepage.html" class = "home"><button>Home</button></a>
-        <a href = "listPage.html" class = "database"><button style="background-color: rgb(255, 165, 0);">Database</button ></a>
-        <a href = "profile.html" class = "profile"><button>Profile</button></a>
-        <a href = "#loginpage" class = "logoutPage"><button style="background-color: rgb(77, 74, 74);">Logout</button></a>
+        <a href = "/homepage.html" class = "home"><button>Home</button></a>
+        <a href = "/listPage.html" class = "database"><button style="background-color: rgb(255, 165, 0);">Database</button ></a>
+        <a href = "/profile.html" class = "profile"><button>Profile</button></a>
+        <a href = "/loginpage" class = "logoutPage"><button style="background-color: rgb(77, 74, 74);">Logout</button></a>
         <!-- <a href = "#content-center" class = "skip">prev page</a> -->
-        <div id = "logo">
+        <div >
             <img id = "logo" src = "../../Frontend/images/purple_bird.png" alt = "image of the weird purple bird; Birby logo">
         </div>
         <div id = "logoText">
@@ -53,22 +53,32 @@
                 </table>
             </div>
             <div class="bottomButtons">
-                <form action=function="/prevPage" method="get">
-                    <button id="pageButton1">Prev Page</button>
-                </form>
-                <form action = "/nextPage" method="get">
-                    <button id="pageButton2">Next Page</button>
-                </form>
+
+                <a href ="javascript:getPrev();"><button id="pageButton1" onclick="getPrev()">Prev Page</button></a>
+
+                <a href ="javascript:getNext();"><button id="pageButton2" onclick="getNext()">Next Page</button></a>
+
 
             </div>
             <script>
-                function getURL(){
-                    return window.location.href;
+                function getNext(){
+                    let temp = window.location.href;
+                    temp.replace("?", "");
+                    console.log(temp + "/nextPage");
+                    window.location = (temp + "/nextPage");
+                    return (temp + "/nextPage");
                 }
-                const button = document.getElementById('pageButton1');
-                button.addEventListener('click', buttonClickedPrev);
-                const button2 = document.getElementById('pageButton2');
-                button2.addEventListener('click', buttonClickedNext);
+                function getPrev(){
+                    let temp = window.location.href;
+                    temp.replace("?", "");
+                    console.log(temp + "/prevPage");
+                    window.location = (temp + "/prevPage");
+                    return (temp + "/prevPage");
+                }
+                // const button = document.getElementById('pageButton1');
+                // button.addEventListener('click', buttonClickedPrev);
+                // const button2 = document.getElementById('pageButton2');
+                // button2.addEventListener('click', buttonClickedNext);
             </script>
         </main>
     </body>

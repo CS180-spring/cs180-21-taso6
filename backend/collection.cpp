@@ -1,11 +1,31 @@
 #include "collection.h"
 #include <iostream>
+#include <fstream>
+#include <cstring>
 
 Collection::Collection(string fName, string name, string uName){
     std::cout << "STUFF: " << fName << ", " << name << ", " << uName << std::endl;
     fileName = fName;
     collectionName = name;
     username = uName;
+    string directory = "assets/";
+    string extend = ".csv";
+    string result = directory + uName + "-" + name + extend;
+
+    fstream file;
+    file.open(result, ios_base::out);
+
+    if(!file){
+       std::cout << "Error in file Creation! at File" << endl;
+    }
+    else{
+        std::cout << "File Creation successful." << endl;
+    }
+//    const int length=result.length();
+//    char* input = new char[length+1];
+//    std::strcpy(input, result.c_str());
+//
+    file.close();
     load();
 }
 
@@ -29,6 +49,9 @@ void Collection::show() {
 
 void Collection::addRecord(bird_record record) {
     birds.push_back(record);
+    ofstream file(fileName, std::ios_base::app);
+    file << record.getRecord();
+    file.close();
 }
 
 void Collection::setCollectionName(string name) {
