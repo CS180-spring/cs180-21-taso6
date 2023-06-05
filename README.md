@@ -2,14 +2,14 @@
 # BirbyDB-CS180
 BirbyDB is an online database platform  designated to sharing and discovering bird observations from around the state of California, for bird enthusiasts and nature observers of all levels of interest to provide a space for learning, sharing, and exploring the world of birds.
 
-Team members: 
+**Team members:**
 * Billy Chau (bchau010@ucr.edu)
 * Francisco Quiroz-Vivar (fquir007@ucr.edu)
 * Caryn Iwanaga (ciwan001@ucr.edu)
 * Eddy Tat (etat002@ucr.edu)
 * Anjali Daryani (adary001@ucr.edu)
 
-Choice of interface: **Terminal Console**
+**Choice of interface:** Webpage Interface**
 
 ## Interface Documentation
 * account_create - initiates account creation process
@@ -18,12 +18,12 @@ Choice of interface: **Terminal Console**
 * prev_page - shows the previous page of records
 * 
 
-Programming language(s): **C++**
+**Programming language(s):** C++
 
-High-level description:
+**High-level description:**
 
-Feasibility study:
+**Feasibility study:**
 
-Initial list of features:
+**Initial list of features:**
 
-Database documentation: Being worked on
+**Database documentation:** Being worked on
