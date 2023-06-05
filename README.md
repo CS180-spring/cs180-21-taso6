@@ -11,23 +11,23 @@ BirbyDB is an online database platform  designated to sharing and discovering bi
 
 **Choice of interface:** Webpage Interface
 
-## Interface Documentation
-* Bird_Record:
+**Interface Documentation**
+Bird_Record:
 - Stores information about birds
 - CRUD operations
 - Essentially a struct
-* Collection:
+Collection:
 - Stores bird_records
 - Linked to users
 - Search and sorting functions
 - Can be seen by other users
 - Can add bird_records from other collections to theirs
-* Users
+Users
 - Stores information about users
 - Collections are linked by users
 - Multi-leveled admin privileges
 - Regular_user and Admin_user inherit from this class
-* Databases
+Databases
 - Class that interacts with the data
 - Stores all the data
 - Login functionality
