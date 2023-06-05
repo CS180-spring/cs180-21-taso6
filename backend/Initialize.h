@@ -21,6 +21,8 @@ public:
     void login(string username, string password);
     void logout();
     bool isLoggedIn();
+    string getCollectionName(int index);
+    Collection getCollection(string collectionName, string username);
 };
 
 #endif

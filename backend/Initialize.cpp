@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <fstream>
 #include <cstdio>
+#include <filesystem>
+#include <boost/filesystem.hpp>
 //#include "parse.h"
 //#include "collection.h"
 
@@ -42,6 +44,13 @@ Database::Database(){
         users.push_back(tempUser);
     }
 //    cout << users.size() << endl;
+    std::string folderPath = "assets/";
+
+//    for (const auto& entry : boost::filesystem::directory_iterator(folderPath)) {
+//        string fileName =
+//        createCollection(entry, )
+//    }
+    createCollection("assets/admin-eBird_1k.csv", "eBird_1k", "admin");
 }
 
 bool Database::canLogin(string username, string password){
@@ -77,4 +86,16 @@ bool Database::isLoggedIn(){
         return false;
     }
     return true;
+}
+
+string Database::getCollectionName(int index) {
+    return collections.at(index).getCollectionName();
+}
+
+Collection Database::getCollection(string collectionName, string username) {
+    for(int i=0; i<collections.size(); i++){
+        if(collections[i].getCollectionName() == collectionName && collections[i].getUsername() == username){
+            return collections[i];
+        }
+    }
 }

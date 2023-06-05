@@ -1,9 +1,12 @@
 #include "collection.h"
+#include <iostream>
 
-Collection::Collection(string fileName, string name, string username){
-    this->fileName = fileName;
-    this->collectionName = name;
-    this->username = username;
+Collection::Collection(string fName, string name, string uName){
+    std::cout << "STUFF: " << fileName << ", " << name << ", " << username << std::endl;
+    fileName = fName;
+    collectionName = name;
+    username = uName;
+    load();
 }
 
 void Collection::load() {
@@ -30,4 +33,25 @@ void Collection::addRecord(bird_record record) {
 
 void Collection::setCollectionName(string name) {
     collectionName = name;
+}
+
+string Collection::getCollectionName(){
+    return collectionName;
+}
+string Collection::getUsername(){
+    return username;
+}
+bird_record Collection::getBird(int index){
+    return birds.at(index);
+}
+
+int Collection::size() {
+    return birds.size();
+}
+
+Collection::Collection(Collection const &cpy){
+    fileName = cpy.fileName;
+    birds = cpy.birds;
+    username = cpy.username;
+    collectionName = cpy.collectionName;
 }

@@ -12,7 +12,8 @@ function buttonClickedPrev() {
     }
   // });
 }
-function buttonClickedNext() {
+function buttonClickedNext(pageData) {
+
   if(currentPage >= totalPages) {
     alert('No more pages');
   }

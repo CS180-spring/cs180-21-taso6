@@ -13,6 +13,7 @@ using namespace std;
 int main() {
     Database curData;
 
+
     crow::SimpleApp app; //define your crow application
     //crow::mustache::set_global_base("Frontend");
 
@@ -159,6 +160,59 @@ int main() {
         res.end();
     });
 
+
+    CROW_ROUTE(app, "/listPage.html/<string>/<int>")([&curData](const crow::request& req, crow::response& res, const std::string file_name, const int pageNumber ){
+        //this is the file name of the csv in the url
+        std::string csvName = "assets/" + file_name;
+        std::stringstream buffer;
+        std::ifstream file("Frontend/listPage.html");
+        if (file.is_open()) {
+            buffer << file.rdbuf();
+            file.close();
+
+            res.set_header("Content-Type", "text/html");
+            res.write(buffer.str());
+        } else {
+            res.code = 404;
+            res.write("File not found\n NOOOOOOOOOOOOO");
+        }
+        //code here
+        string colName = csvName.substr(csvName.find("-") + 1);
+        string uName = csvName.substr(csvName.find('/') +1, csvName.find("-") - csvName.find('/')-1 );
+
+//        Collection tempCollection(curData.getCollection(colName , uName));
+
+        string temp = buffer.str();
+        string placeholder = "CurrentPageNumber";
+        size_t pos = temp.find(placeholder);
+        if(pos != string::npos){
+            temp.replace(pos, placeholder.length(), to_string(pageNumber));
+        }
+        //loop through colletions vector and write actual html code
+        Collection test(curData.getCollection(colName , uName));
+        string tableStuff;
+        int thingy = curData.getCollection(colName , uName).size();
+        for(int i = 0; i < curData.getCollection(colName , uName).size(); i++){
+            bird_record tempBird = curData.getCollection(colName , uName).getBird(i);
+            tableStuff += "<div>" + tempBird.getCommonName() + tempBird.getLocality() + tempBird.getObservationDate() + "</div>\n" ;
+        }
+
+        placeholder = "PageInfo";
+        pos = temp.find(placeholder);
+        if(pos != string::npos){
+            temp.replace(pos, placeholder.length(), tableStuff);
+        }
+
+
+        res.end();
+    });
+
+    CROW_ROUTE(app, "/listPage.html/<string>/<int>/prevPage")([&curData](const crow::request& req, crow::response& res, const std::string file_name, int pageNumber ){
+        //this is the file name of the csv in the url
+        res.code = 302;
+        res.add_header("Location", "/listPage.html/<string>/" + to_string(pageNumber--));
+        res.end();
+    });
     CROW_ROUTE(app, "/<path>")
             ([](const crow::request& req, crow::response& res, const std::string& path) {
                 std::string extension = path.substr(path.find_last_of(".") + 1);
@@ -200,12 +254,10 @@ int main() {
                     }
                 } else {
                     res.code = 404;
-                    res.write("File not found");
+                    res.write("File not found\n AAAAAAAAAAAAAH");
                 }
                 res.end();
             });
-
-
 
     //set the port, set the app to run on multiple threads, and run the app
     app.port(18080).multithreaded().run();

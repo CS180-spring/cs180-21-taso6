@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" type="text/css" href="Frontend/listPage.css">
+        <link rel="stylesheet" type="text/css" href="../../Frontend/listPage.css">
         <input type="file" name="eBird_1k_cleaned.csv" id="file" accept=".csv" > <br><br>
         <input type="button" id="btnsubmit" value="Submit" onclick="readCSVFile(1);" >
         <!-- <input type="file" id="fileInput">
         <button id="loadButton">Load CSV</button> -->
 
-        <script src="../Frontend/listPage.js"></script>
+<!--        <script src="../..//Frontend/listPage.js"></script>-->
         <style>
             button {
                 background-color: #4CAF50;
@@ -38,7 +38,7 @@
         <main role="main">
             <div class="data">
                 <div id = 'pageNumberText'>
-                    <!-- Birby Database -->
+                    <!-- Birby Database -->Page CurrentPageNumber
                 </div>
                 <a href="addObservation.html"><button style="margin-left: 3%;">Add Observation</button></a>
                 
@@ -52,15 +52,23 @@
                         </tr>
                     </thead>
                     <tbody>
-        
+                        Pageinfo
                     </tbody>
                 </table>
             </div>
             <div class="bottomButtons">
-                <button id="pageButton1">Prev Page</button>
-                <button id="pageButton2">Next Page</button>
+                <form action=function="/prevPage" method="get">
+                    <button id="pageButton1">Prev Page</button>
+                </form>
+                <form action = "/nextPage" method="get">
+                    <button id="pageButton2">Next Page</button>
+                </form>
+
             </div>
             <script>
+                function getURL(){
+                    return window.location.href;
+                }
                 const button = document.getElementById('pageButton1');
                 button.addEventListener('click', buttonClickedPrev);
                 const button2 = document.getElementById('pageButton2');

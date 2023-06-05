@@ -58,7 +58,7 @@ void registration(Database curData, string username, string password) {
 void forgot() {
     //forgot password function
 }
-void delete_file(Database curData){
+void delete_file(Database curData, string username){
     //char fileName[30] = "../assets/";
 
     string directory = "assets/";
@@ -69,7 +69,7 @@ void delete_file(Database curData){
     getline(cin,userInput);
 
     string result;
-    result = directory + userInput + extend;
+    result = directory + username + "-" + userInput + extend;
 
     const int length = result.length();
     char* input = new char[length + 1];
@@ -85,7 +85,7 @@ void delete_file(Database curData){
         delete[] input;
         return;
 }
-void create_file(Database curData){
+void create_file(Database curData, string username){
     string directory = "assets/";
     string extend = ".csv";
     string userInput;
@@ -94,7 +94,7 @@ void create_file(Database curData){
     getline(cin,userInput);
 
     string result;
-    result = directory + userInput + extend;
+    result = directory + username + "-" + userInput + extend;
     cout << result << endl;
     fstream file;
     //ofstream record;
