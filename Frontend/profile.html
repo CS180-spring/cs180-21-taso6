@@ -148,13 +148,25 @@
     <div class="container">
         <img class="profile-img" src="images/stockpicture.png">
         <h1>Account Profile</h1>
-        <form>
+        <form id="account-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" value="Bobby Smith">
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" value="Bobbysmith74@gmail.com">
         </form>
+        <button onclick="updateForm()">Update Profile</button>
+
+        <script>
+            function updateForm() {
+                var newName = prompt("Enter new name:");
+                var newEmail = prompt("Enter new email:");
+
+                document.getElementById("name").value = newName;
+                document.getElementById("email").value = newEmail;
+            }
+        </script>
+
 
         <h2>My Lists</h2>
         <ul id="button-list">
